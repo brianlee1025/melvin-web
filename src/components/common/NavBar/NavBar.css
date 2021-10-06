@@ -1,4 +1,13 @@
-.navLink {
-    color: black !important;
-    font-size: 1.2em;
+.navLink,
+.navDropDown .nav-link,
+.navDropDownItem {
+  font-size: 1.2em;
+  padding-right: 10px;
+}
+
+.navLink:hover,
+.navDropDown .nav-link:hover,
+.navDropDownItem:hover {
+  font-weight: bold;
+  color: forestgreen !important;
 }

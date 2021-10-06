@@ -1,18 +1,25 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { titles } from '../../enum/NavBar'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { menus } from '../../enum/NavBarMenu'
 import './NavBar.css'
 
 const NavBar = () => {
     return (
         <>
-            <Navbar collapseOnSelect sticky="top" expand="md" style={{backgroundColor: "transparent"}}>
+            <Navbar collapseOnSelect expand="md" style={{backgroundColor: "transparent"}}>
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="justify-content-end" style={{width: "100%"}}>
-                            {titles.map((title, index) => {
-                                return <Nav.Link className="navLink" href={title.url} key={index}>{title.name}</Nav.Link>
+                            {menus.map((menu, index) => {
+                                return menu.dropDown ?
+                                <NavDropdown className="navDropDown" title={menu.name}>
+                                    {menu.dropDownItems.map((item, j) => {
+                                        return <NavDropdown.Item className="navDropDownItem" eventKey={j}>{item.name}</NavDropdown.Item>
+                                    })}
+                                </NavDropdown>
+                                :
+                                <Nav.Link className="navLink" href={menu.url} key={index}>{menu.name}</Nav.Link>
                             })
                             }
                         </Nav>

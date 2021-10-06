@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/common/NavBar/NavBar';
+import GoTopButton from './components/common/GoTopButton/GoTopButton';
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
+    <GoTopButton />
     <Router>
       <Switch>
         <Route exact path="/" component={App} />
