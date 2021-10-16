@@ -11,3 +11,23 @@
   font-weight: bold;
   color: forestgreen !important;
 }
+
+.container {
+  max-width: 100% !important;
+  justify-content: right !important;
+  text-align: right !important;
+}
+
+.dropdown-menu .show {
+  width: 100% !important;
+  display: contents;
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 768px) {
+  .dropdown-menu {
+    text-align: right !important;
+    float: right !important;
+    width: 37% !important;
+  }
+}

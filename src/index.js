@@ -13,7 +13,7 @@ ReactDOM.render(
     <GoTopButton />
     <Router>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/"><App /></Route>
       </Switch>
     </Router>
   </React.StrictMode>,

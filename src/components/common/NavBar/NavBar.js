@@ -7,7 +7,8 @@ const NavBar = () => {
     return (
         <>
             <Navbar collapseOnSelect expand="md" style={{backgroundColor: "transparent"}}>
-                <Container>
+                <Container className="container">
+                    <Navbar.Brand href="/">MMT</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="justify-content-end" style={{width: "100%"}}>
@@ -15,7 +16,14 @@ const NavBar = () => {
                                 return menu.dropDown ?
                                 <NavDropdown className="navDropDown" title={menu.name}>
                                     {menu.dropDownItems.map((item, j) => {
-                                        return <NavDropdown.Item className="navDropDownItem" eventKey={j}>{item.name}</NavDropdown.Item>
+                                        return item.dropDown ?
+                                                <NavDropdown className="navDropDown" title={item.name}>
+                                                    {item.dropDropItems.map((moreItem, k) => {
+                                                        return <NavDropdown.Item className="navDropDownItem" eventKey={k}>{moreItem.name}</NavDropdown.Item>
+                                                    })}
+                                                </NavDropdown>
+                                                :
+                                                <NavDropdown.Item className="navDropDownItem" eventKey={j}>{item.name}</NavDropdown.Item>
                                     })}
                                 </NavDropdown>
                                 :

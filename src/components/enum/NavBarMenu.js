@@ -10,51 +10,78 @@ export const menus = [
         dropDown: false
     },
     {
-        name: 'Products',
-        url: '/products',
+        name: 'Our Products',
+        url: '/our-products',
         dropDown: true,
         dropDownItems: [
             {
-                name: 'Product 1',
-                url: '/product/1'
+                name: 'F&B',
+                url: '/our-products/f&b',
+                dropDown: true,
+                dropDropItems: [
+                    {
+                        name: 'Pau Sedap',
+                        url: '/our-products/f&b/pau-sedap'
+                    },
+                    {
+                        name: 'Pau Habibi',
+                        url: '/our-products/f&b/pau-habibi'
+                    },
+                    {
+                        name: 'Ramly',
+                        url: '/our-products/f&b/ramly'
+                    },
+                    {
+                        name: 'Tisha\'s Food',
+                        url: '/our-products/f&b/tishas-food'
+                    },
+                    {
+                        name: 'Kluang Coffee',
+                        url: '/our-products/f&b/kluang-coffee'
+                    },
+                    {
+                        name: 'F&N',
+                        url: '/our-products/f&b/f&n'
+                    },
+                ]
             },
             {
-                name: 'Product 2',
-                url: '/product/2'
-            },
-            {
-                name: 'Product 3',
-                url: '/product/3'
-            },
-            {
-                name: 'Product 4',
-                url: '/product/4'
+                name: 'Packaging Products',
+                url: '/packaging-products',
+                dropDown: true,
+                dropDropItems: [
+                    {
+                        name: 'Air Bubble Wrap',
+                        url: '/packaging-products/air-bubble-wrap'
+                    },
+                    {
+                        name: 'Inflatable Bubble Wrap',
+                        url: '/packaging-products/inflatable-bubble-wrap'
+                    },
+                    {
+                        name: 'Stretch Film',
+                        url: '/packaging-products/stretch-film'
+                    },
+                    {
+                        name: 'Tapes',
+                        url: '/packaging-products/tapes'
+                    },
+                    {
+                        name: 'Others',
+                        url: '/packaging-products/others'
+                    },
+                ]
             }
         ]
     },
     {
-        name: 'Stockist',
-        url: '/stockist',
+        name: 'Our Coverage Area',
+        url: '/our-coverage-area',
         dropDown: false
     },
     {
-        name: 'FAQ',
-        url: '/faq',
-        dropDown: false
-    },
-    {
-        name: 'Achievement',
-        url: '/achievement',
-        dropDown: false
-    },
-    {
-        name: 'News & Event',
-        url: '/news&event',
-        dropDown: false
-    },
-    {
-        name: 'Contact',
-        url: '/contact',
+        name: 'Contact Us',
+        url: '/contact-us',
         dropDown: false
     },
 ]
