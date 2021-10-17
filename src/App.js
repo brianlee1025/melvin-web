@@ -4,6 +4,7 @@ import NavBar from './components/common/NavBar/NavBar';
 import HomePage from './components/pages/HomePage/HomePage';
 import GoTopButton from './components/common/GoTopButton/GoTopButton';
 import WhatsAppButton from './components/common/WhatsAppButton/WhatsAppButton';
+import PageNotFound from './components/common/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Switch>
             <Route exact path="/" render={() => { return (<Redirect to="/home"/>)}}/>
             <Route path="/home" component={HomePage} />
+            <Route component={PageNotFound}/>
           </Switch>
         </div>
         <WhatsAppButton />
