@@ -5,13 +5,13 @@ import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <>
-            <Navbar collapseOnSelect expand="md" style={{backgroundColor: "transparent"}}>
+        <React.Fragment>
+            <Navbar collapseOnSelect expand="md" style={{backgroundColor: "grey", fontSize: "1.2em"}}>
                 <Container className="container">
-                    <Navbar.Brand href="/">MMT</Navbar.Brand>
+                    <Navbar.Brand href="/home" style={{float: "left"}}>MMT</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="justify-content-end" style={{width: "100%"}}>
+                        <Nav className="justify-content-end" style={{width: "100%", textAlign: "right"}}>
                             {menus.map((menu, index) => {
                                 return menu.dropDown ?
                                 <NavDropdown className="navDropDown" title={menu.name}>
@@ -34,7 +34,7 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+        </React.Fragment>
     )
 }
 

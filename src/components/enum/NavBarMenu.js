@@ -1,7 +1,7 @@
 export const menus = [
     {
         name: 'Home',
-        url: '/',
+        url: '/home',
         dropDown: false
     },
     {

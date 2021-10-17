@@ -1,7 +1,7 @@
 .navLink,
 .navDropDown .nav-link,
 .navDropDownItem {
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-right: 10px;
 }
 
@@ -14,8 +14,6 @@
 
 .container {
   max-width: 100% !important;
-  justify-content: right !important;
-  text-align: right !important;
 }
 
 .dropdown-menu .show {
@@ -28,6 +26,6 @@
   .dropdown-menu {
     text-align: right !important;
     float: right !important;
-    width: 37% !important;
+    min-width: 40% !important;
   }
 }
