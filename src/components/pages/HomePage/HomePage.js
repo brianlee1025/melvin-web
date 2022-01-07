@@ -1,76 +1,127 @@
 import React from "react";
 import "./HomePage.css";
-import { Carousel, Image, Button } from "react-bootstrap";
-import { slideShows } from "../../enum/HomePageSlides";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import ReactPlayer from "react-player";
+import { Card, Col, Row } from "react-bootstrap";
+import Slide from "react-reveal/Slide";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Products } from "../../enum/Products";
 
 const HomePage = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <div align="center">
-      <Carousel
-        fade
-        variant="dark"
-        controls={false}
-        style={{ textAlign: "center" }}
-      >
-        {slideShows.map((item, index) => {
-          return (
-            <Carousel.Item key={index}>
-              <Image
-                src={item.img_url}
-                fluid
-                style={{ height: "auto", width: "100%" }}
-              />
-              <Carousel.Caption>
-                <h3>{item.label}</h3>
-                <p>{item.caption}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          );
-        })}
-      </Carousel>
-      <div
-        className="section"
-        style={{ backgroundColor: "grey", minHeight: "50px" }}
-      >
-        <h2>MMT Trading</h2>
-      </div>
-
       <div className="player-wrapper">
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=xcJtL7QggTI"
+          onContextMenu={(e) => e.preventDefault()}
+          url="vid/home_intro.mp4"
           className="react-player"
-          playing
-          controls={true}
+          loop={true}
+          playing={true}
+          volume={0}
           width="100%"
           height="100%"
         />
       </div>
 
       <div className="section">
-        <Image
-          src={process.env.PUBLIC_URL + "/img/f&bproducts.png"}
-          fluid
-          style={{ height: "auto", width: "100%" }}
-        />
+        <Slide left>
+          <Row>
+            <Col md={12} className="sectionTitle">
+              Discover Our Story
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12} className="sectionBody">
+              Since its inception in 2015, MMT Trading has been established
+              as...
+            </Col>
+            <Col md={12} className="sectionBody">
+              <a href="/aboutUs">Read More</a>
+            </Col>
+          </Row>
+        </Slide>
       </div>
 
       <div className="section">
-        <Image
-          src={process.env.PUBLIC_URL + "/img/packagingProducts.png"}
-          fluid
-          style={{ height: "auto", width: "100%" }}
-        />
+        <Slide left>
+          <Row>
+            <Col md={12} className="sectionTitle">
+              Our Products
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12} className="sectionBody">
+              <Carousel
+                swipeable={true}
+                draggable={false}
+                responsive={responsive}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                {Products.map((prod, index) => {
+                  return (
+                    <Card key={index}>
+                      <Card.Img
+                        variant="top"
+                        src={prod.img}
+                        style={{ padding: "2em 2em 2em 2em" }}
+                      />
+                      <Card.Body>
+                        <Card.Text>{prod.title}</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  );
+                })}
+              </Carousel>
+            </Col>
+          </Row>
+        </Slide>
       </div>
 
-      <div className="foot-print-div">
-        <div className="vertical-center">
-          <Button clasvariant="success">
-            Our Footprint&nbsp;
-            <FaMapMarkerAlt style={{ marginTop: "-5px" }} />
-          </Button>
-        </div>
+      <div className="section">
+        <Slide left>
+          <Row>
+            <Col md={12} className="sectionTitle">
+              Our Businesses
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} className="sectionBody">
+              Find Us
+            </Col>
+            <Col md={6} className="sectionBody">
+              Sales Marketing Office
+            </Col>
+          </Row>
+        </Slide>
       </div>
     </div>
   );

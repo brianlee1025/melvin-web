@@ -1,7 +1,11 @@
-.vertical-button {
+.whatsapp-button {
   position: fixed;
-  transform: rotate(270deg);
   z-index: 999;
-  right: -50px;
-  bottom: 50%;
+  right: 30px;
+  bottom: 60px;
+  border-radius: 50%;
+}
+
+.whatsapp-icon {
+  font-size: 1.5em;
 }

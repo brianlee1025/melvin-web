@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
+html,
 body {
+  height: 100%;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
   margin-left: auto;
   margin-right: auto;
   background-color: gainsboro;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
