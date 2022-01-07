@@ -9,7 +9,7 @@ const NavBar = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        style={{ backgroundColor: "transparent", fontSize: "1.2em" }}
+        style={{ backgroundColor: "gainsboro", fontSize: "1.2em" }}
       >
         <Container className="container">
           <Navbar.Brand href="/home" style={{ float: "left" }}>

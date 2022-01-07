@@ -16,7 +16,10 @@
   padding: 0.5em 0 0.5em 0;
   font-size: 4vh;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 
 .sectionBody {
