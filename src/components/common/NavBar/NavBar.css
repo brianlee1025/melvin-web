@@ -9,11 +9,10 @@
 .navDropDown .nav-link:hover,
 .navDropDownItem:hover {
   font-weight: bold;
-  color: forestgreen !important;
+  /* color: forestgreen !important; */
 }
 
-.container {
-  max-width: 80% !important;
+.navContainer {
   color: #ffffff;
   text-shadow: 0 0 10px #000000;
 }
@@ -29,11 +28,5 @@
     text-align: right !important;
     float: right !important;
     min-width: 40% !important;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    max-width: 100% !important;
   }
 }

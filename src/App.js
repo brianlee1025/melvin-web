@@ -10,6 +10,8 @@ import HomePage from "./components/pages/HomePage/HomePage";
 import GoTopButton from "./components/common/GoTopButton/GoTopButton";
 import WhatsAppButton from "./components/common/WhatsAppButton/WhatsAppButton";
 import PageNotFound from "./components/common/PageNotFound/PageNotFound";
+import AboutUs from "./components/pages/AboutUs/AboutUs";
+import Footer from "./components/common/Footer/Footer";
 
 function App() {
   return (
@@ -26,11 +28,13 @@ function App() {
               }}
             />
             <Route path="/home" component={HomePage} />
+            <Route path="/aboutUs" component={AboutUs} />
             <Route component={PageNotFound} />
           </Switch>
         </div>
         <WhatsAppButton />
         <GoTopButton />
+        <Footer />
       </Router>
     </div>
   );

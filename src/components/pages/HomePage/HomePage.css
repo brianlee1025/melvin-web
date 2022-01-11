@@ -2,7 +2,6 @@
   width: 100%;
   text-align: center;
   justify-content: center;
-  /* border: 1px solid black; */
 }
 
 .section:nth-child(odd) {
@@ -17,9 +16,9 @@
   font-size: 4vh;
   font-weight: bold;
   color: #ffffff;
-  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
-    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
-    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
+    -2px 0px 0 #000000, 0px -2px 0 #000000;
 }
 
 .sectionBody {
@@ -39,15 +38,18 @@
 }
 
 .carousel-container {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 20px 0;
+}
+
+.react-multi-carousel-item {
+  padding: 0 25px 0 25px;
 }
 
 .card {
-  width: 90%;
-  margin-left: 25px;
   border-radius: 20%;
   -webkit-box-shadow: 5px 5px 15px -1px #000000;
   box-shadow: 5px 5px 15px -1px #000000;
+  cursor: pointer;
 }
 
 .react-multi-carousel-item:hover {

@@ -6,7 +6,6 @@ import Slide from "react-reveal/Slide";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Products } from "../../enum/Products";
-
 const HomePage = () => {
   const responsive = {
     superLargeDesktop: {
@@ -43,84 +42,90 @@ const HomePage = () => {
         />
       </div>
 
-      <div className="section">
+      <div className="w-100">
         <Slide left>
-          <Row>
-            <Col md={12} className="sectionTitle">
-              Discover Our Story
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} className="sectionBody">
-              Since its inception in 2015, MMT Trading has been established
-              as...
-            </Col>
-            <Col md={12} className="sectionBody">
-              <a href="/aboutUs">Read More</a>
-            </Col>
-          </Row>
+          <div className="container">
+            <Row>
+              <Col md={12} className="sectionTitle">
+                Discover Our Story
+              </Col>
+            </Row>
+            <Row>
+              <Col md={12} className="sectionBody">
+                Since its inception in 2015, MMT Trading has been established
+                as...
+              </Col>
+              <Col md={12} className="sectionBody">
+                <a href="/aboutUs">Read More</a>
+              </Col>
+            </Row>
+          </div>
         </Slide>
       </div>
 
-      <div className="section">
-        <Slide left>
-          <Row>
-            <Col md={12} className="sectionTitle">
-              Our Products
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} className="sectionBody">
-              <Carousel
-                swipeable={true}
-                draggable={false}
-                responsive={responsive}
-                ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-              >
-                {Products.map((prod, index) => {
-                  return (
-                    <Card key={index}>
-                      <Card.Img
-                        variant="top"
-                        src={prod.img}
-                        style={{ padding: "2em 2em 2em 2em" }}
-                      />
-                      <Card.Body>
-                        <Card.Text>{prod.title}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  );
-                })}
-              </Carousel>
-            </Col>
-          </Row>
+      <div className="w-100">
+        <Slide right>
+          <div className="container">
+            <Row>
+              <Col md={12} className="sectionTitle">
+                Our Products
+              </Col>
+            </Row>
+            <Row>
+              <Col md={12} className="sectionBody">
+                <Carousel
+                  swipeable={true}
+                  draggable={false}
+                  responsive={responsive}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  autoPlay={true}
+                  autoPlaySpeed={3000}
+                  keyBoardControl={true}
+                  transitionDuration={500}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
+                  dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px"
+                >
+                  {Products.map((prod, index) => {
+                    return (
+                      <Card key={index}>
+                        <Card.Img
+                          variant="top"
+                          src={prod.img}
+                          style={{ padding: "2em 2em 2em 2em" }}
+                        />
+                        <Card.Body>
+                          <Card.Text>{prod.title}</Card.Text>
+                        </Card.Body>
+                      </Card>
+                    );
+                  })}
+                </Carousel>
+              </Col>
+            </Row>
+          </div>
         </Slide>
       </div>
 
-      <div className="section">
+      <div className="w-100">
         <Slide left>
-          <Row>
-            <Col md={12} className="sectionTitle">
-              Our Businesses
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6} className="sectionBody">
-              Find Us
-            </Col>
-            <Col md={6} className="sectionBody">
-              Sales Marketing Office
-            </Col>
-          </Row>
+          <div className="container">
+            <Row>
+              <Col md={12} className="sectionTitle">
+                Our Businesses
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6} className="sectionBody">
+                Find Us
+              </Col>
+              <Col md={6} className="sectionBody">
+                Sales Marketing Office
+              </Col>
+            </Row>
+          </div>
         </Slide>
       </div>
     </div>

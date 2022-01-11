@@ -15,7 +15,11 @@ const WhatsAppButton = () => {
           </Tooltip>
         }
       >
-        <Button className="whatsapp-button" variant="success">
+        <Button
+          className="whatsapp-button p-2 rounded-circle"
+          variant="success"
+          size="lg"
+        >
           <FaWhatsapp className="whatsapp-icon" />
         </Button>
       </OverlayTrigger>

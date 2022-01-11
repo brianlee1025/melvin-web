@@ -5,13 +5,17 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <React.Fragment>
+    <div className="container">
       <Navbar
+        fixed="top"
         collapseOnSelect
         expand="lg"
-        style={{ backgroundColor: "gainsboro", fontSize: "1.2em" }}
+        style={{
+          background: "rgb(255, 255, 255, 0.8)",
+          fontSize: "1.2em",
+        }}
       >
-        <Container className="container">
+        <Container className="navContainer">
           <Navbar.Brand href="/home" style={{ float: "left" }}>
             MMT
           </Navbar.Brand>
@@ -58,7 +62,7 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </React.Fragment>
+    </div>
   );
 };
 
