@@ -1,4 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"),
+    url(./fonts/NotoSansSC-Regular.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"),
+    url(./fonts/NotoSansSC-Medium.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"),
+    url(./fonts/NotoSansSC-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"), url(./fonts/NotoSansSC-Bold.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"),
+    url(./fonts/NotoSansSC-Light.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK SC";
+  src: local("Noto Sans CJK SC"), url(./fonts/NotoSansSC-Thin.otf) format("otf");
+}
 
 body {
   height: 100%;
@@ -8,7 +40,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: gainsboro;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans CJK SC" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
