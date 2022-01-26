@@ -1,22 +1,27 @@
 export const Products = [
   {
-    img: "img/unknown_product.svg",
-    title: "Product 1",
+    img: "img/products/pau_sedap.jpg",
+    title: "Pau Sedap",
+    alt: "MMT Trading - Pau Sedap",
   },
   {
-    img: "img/unknown_product.svg",
-    title: "Product 2",
+    img: "img/products/ramly.jpg",
+    title: "Ramly",
+    alt: "MMT Trading - Ramly",
   },
   {
-    img: "img/unknown_product.svg",
-    title: "Product 3",
+    img: "img/products/my_lacta.jpg",
+    title: "My Lacta",
+    alt: "MMT Trading - My Lacta",
   },
   {
-    img: "img/unknown_product.svg",
-    title: "Product 4",
+    img: "img/products/cleaning_products.jpg",
+    title: "Cleaning Products",
+    alt: "MMT Trading - Cleaning Products",
   },
   {
-    img: "img/unknown_product.svg",
-    title: "Product 5",
+    img: "img/products/packaging_products.jpg",
+    title: "Packaging Products",
+    alt: "MMT Trading - Packaging Products",
   },
 ];

@@ -1,10 +1,5 @@
 export const menus = [
   {
-    name: "Home",
-    url: "/home",
-    dropDown: false,
-  },
-  {
     name: "About Us",
     url: "/aboutUs",
     dropDown: false,

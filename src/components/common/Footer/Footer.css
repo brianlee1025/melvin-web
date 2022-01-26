@@ -1,6 +1,12 @@
 .footer {
   width: 100%;
-  background: rgb(255, 255, 255, 0.8);
+  background: #234ea2;
+  color: white;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 1.3em;
 }
 
 ul,
@@ -8,11 +14,5 @@ li {
   list-style-type: none;
   list-style-position: inside;
   margin: 0;
-  padding: 0 0 10px 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .productCol {
-    text-align: center;
-  }
+  padding: 0;
 }

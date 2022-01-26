@@ -1,20 +1,16 @@
-.navLink,
+.nav-link,
 .navDropDown .nav-link,
 .navDropDownItem {
-  font-size: 1.1em;
-  padding-right: 10px;
+  color: #ffffff !important;
+  font-size: 1em;
+  padding-right: 10px !important;
 }
 
-.navLink:hover,
+.nav-link:hover,
 .navDropDown .nav-link:hover,
 .navDropDownItem:hover {
   font-weight: bold;
   /* color: forestgreen !important; */
-}
-
-.navContainer {
-  color: #ffffff;
-  text-shadow: 0 0 10px #000000;
 }
 
 .dropdown-menu .show {
@@ -22,6 +18,12 @@
   display: contents;
 }
 
+.mmtLogo {
+  background-color: white;
+  margin-top: -50px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 44%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 16% 100%, 0% 44%);
+}
 /* For Mobile Phones */
 @media only screen and (max-width: 768px) {
   .dropdown-menu {

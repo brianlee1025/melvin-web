@@ -4,26 +4,21 @@
   justify-content: center;
 }
 
-.section:nth-child(odd) {
-  background-color: gainsboro;
-}
-.section:nth-child(even) {
-  background-color: white;
-}
-
 .sectionTitle {
   padding: 0.5em 0 0.5em 0;
   font-size: 4vh;
   font-weight: bold;
-  color: #ffffff;
-  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-    -2px 0px 0 #000000, 0px -2px 0 #000000;
+  color: #234ea2;
 }
 
 .sectionBody {
   padding: 0 0 0.5em 0;
   font-size: 3vh;
+  color: black;
+}
+
+.discoverStory {
+  line-height: 25px;
 }
 
 .player-wrapper {
@@ -46,9 +41,6 @@
 }
 
 .card {
-  border-radius: 20%;
-  -webkit-box-shadow: 5px 5px 15px -1px #000000;
-  box-shadow: 5px 5px 15px -1px #000000;
   cursor: pointer;
 }
 

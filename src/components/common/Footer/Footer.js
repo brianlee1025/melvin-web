@@ -1,59 +1,87 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import { Products } from "../../enum/Products";
+import { Services } from "../../enum/Services";
 import "./Footer.css";
-import { FaMapPin, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
+import { GiRotaryPhone } from "react-icons/gi";
+import { MdEmail } from "react-icons/md";
+
+const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer mt-5 pb-3">
       <div className="container">
         <Row className="pt-4">
-          <Col md={4}>
-            <p>About Us</p>
-            <p style={{ textAlign: "justify" }}>
-              Guaranteed to be fresh and of high quality, our products have
-              allowed us to gain trust and confidence from our customers while
-              building a good reputation for ourselves in this industry. We
-              pride ourselves by maintaining products and services of top
-              quality while continuously offering the best products sourced from
-              every continents of the world.
+          <Col md={3}>
+            <p>
+              <Image
+                src={public_img_path + "logo_white_cropped.png"}
+                className="d-inline-block align-top"
+                alt="MMT Trading"
+              />
+            </p>
+            <p className="mb-0">
+              <GiRotaryPhone /> +6017-7217996
+            </p>
+            <p>
+              <MdEmail /> info@mmt@asia
             </p>
           </Col>
-          <Col md={4} className="productCol">
-            <p>Our Products</p>
+          <Col md={3}>
+            <p className="main-title">
+              <b>PRODUCTS</b>
+            </p>
             <p>
               <ul>
                 {Products.map((item, index) => {
                   return (
-                    <li key={index}>
-                      <a href="#">{item.title}</a>
+                    <li key={index} style={{ cursor: "pointer" }}>
+                      {item.title}
                     </li>
                   );
                 })}
               </ul>
             </p>
           </Col>
-          <Col md={4}>
-            <p>Contact Info</p>
-            <p className="mb-0">
-              Address&nbsp;
-              <FaMapPin />
+          <Col md={3}>
+            <p className="main-title">
+              <b>SERVICES</b>
             </p>
             <p>
-              No. 123 Jalan MMT Seksyen 888, 46000 Petaling Jaya, Selangor,
-              Malaysia.
+              <ul>
+                {Services.map((item, index) => {
+                  return (
+                    <li key={index} style={{ cursor: "pointer" }}>
+                      {item.title}
+                    </li>
+                  );
+                })}
+              </ul>
+            </p>
+          </Col>
+          <Col md={3}>
+            <p className="main-title">
+              <b>ADDRESS</b>
             </p>
             <p className="mb-0">
-              Contact Number&nbsp;
-              <FaPhoneAlt />
+              <b>HEADQUATER OFFICE</b>
             </p>
-            <p>+6012-1234567</p>
+            <p>
+              68, Jalan 2/10b, Taman Industri Spring Crest Batu Caves, 68100
+              Batu Caves, Wilayah Persekutuan Kuala Lumpur
+            </p>
             <p className="mb-0">
-              E-Mail&nbsp;
-              <FaMailBulk />
+              <b>JOHOR OFFICE</b>
             </p>
-            <p>mmt-trading@gmail.com</p>
+            <p>No.29, Jalan Intan 2/1, Taman Intan 86000, Kluang, Johor</p>
+            <p className="mb-0">
+              <b>MELAKA OFFICE</b>
+            </p>
+            <p>
+              No.68, Jalan Mutiara Melaka 2, Taman Mutiara Melaka, 75350 Batu
+              Berendam, Melaka
+            </p>
           </Col>
         </Row>
       </div>
