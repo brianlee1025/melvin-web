@@ -25,7 +25,7 @@ const Footer = () => {
               <GiRotaryPhone /> +6017-7217996
             </p>
             <p>
-              <MdEmail /> info@mmt@asia
+              <MdEmail /> info@mmt.asia
             </p>
           </Col>
           <Col md={3}>

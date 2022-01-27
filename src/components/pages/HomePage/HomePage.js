@@ -147,6 +147,9 @@ const HomePage = () => {
                       <Col md={4}>
                         <Card key={index}>
                           <Card.Img src={prod.img} alt={prod.alt} />
+                          <Card.ImgOverlay>
+                            {prod.title.toUpperCase()}
+                          </Card.ImgOverlay>
                         </Card>
                       </Col>
                     );
