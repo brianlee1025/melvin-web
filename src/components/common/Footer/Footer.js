@@ -21,22 +21,24 @@ const Footer = () => {
                 alt="MMT Trading"
               />
             </p>
-            <p className="mb-0">
+            <p className="mb-0 bottom-content">
               <GiRotaryPhone /> +6017-7217996
             </p>
-            <p>
+            <p className="bottom-content">
               <MdEmail /> info@mmt.asia
             </p>
           </Col>
           <Col md={3}>
-            <p className="main-title">
-              <b>PRODUCTS</b>
-            </p>
+            <p className="noto-sans-sc bold main-title">PRODUCTS</p>
             <p>
-              <ul>
+              <ul className="footerUl bottom-content">
                 {Products.map((item, index) => {
                   return (
-                    <li key={index} style={{ cursor: "pointer" }}>
+                    <li
+                      className="footerLi"
+                      key={index}
+                      style={{ cursor: "pointer" }}
+                    >
                       {item.title}
                     </li>
                   );
@@ -45,14 +47,16 @@ const Footer = () => {
             </p>
           </Col>
           <Col md={3}>
-            <p className="main-title">
-              <b>SERVICES</b>
-            </p>
+            <p className="noto-sans-sc bold main-title">SERVICES</p>
             <p>
-              <ul>
+              <ul className="footerUl bottom-content">
                 {Services.map((item, index) => {
                   return (
-                    <li key={index} style={{ cursor: "pointer" }}>
+                    <li
+                      className="footerLi"
+                      key={index}
+                      style={{ cursor: "pointer" }}
+                    >
                       {item.title}
                     </li>
                   );
@@ -61,24 +65,24 @@ const Footer = () => {
             </p>
           </Col>
           <Col md={3}>
-            <p className="main-title">
-              <b>ADDRESS</b>
+            <p className="noto-sans-sc bold main-title">ADDRESS</p>
+            <p className="noto-sans-sc bold mb-0 bottom-content">
+              HEADQUATER OFFICE
             </p>
-            <p className="mb-0">
-              <b>HEADQUATER OFFICE</b>
-            </p>
-            <p>
+            <p className="bottom-content">
               68, Jalan 2/10b, Taman Industri Spring Crest Batu Caves, 68100
               Batu Caves, Wilayah Persekutuan Kuala Lumpur
             </p>
-            <p className="mb-0">
-              <b>JOHOR OFFICE</b>
+            <p className="noto-sans-sc bold mb-0 bottom-content">
+              JOHOR OFFICE
             </p>
-            <p>No.29, Jalan Intan 2/1, Taman Intan 86000, Kluang, Johor</p>
-            <p className="mb-0">
-              <b>MELAKA OFFICE</b>
+            <p className="bottom-content">
+              No.29, Jalan Intan 2/1, Taman Intan 86000, Kluang, Johor
             </p>
-            <p>
+            <p className="noto-sans-sc bold mb-0 bottom-content">
+              MELAKA OFFICE
+            </p>
+            <p className="bottom-content">
               No.68, Jalan Mutiara Melaka 2, Taman Mutiara Melaka, 75350 Batu
               Berendam, Melaka
             </p>

@@ -1,0 +1,49 @@
+.contentPart {
+  padding-bottom: 2rem !important;
+}
+
+.contentPart p {
+  line-height: 0.5rem;
+}
+
+.aboutUsSectionBody {
+  color: black;
+  font-size: 1em;
+}
+
+.mileStoneTitle {
+  width: 50%;
+  text-align: right;
+}
+
+.mileStoneBodyContainer {
+  width: 100%;
+  display: flex;
+}
+
+.leftMileStone {
+  width: 35%;
+  text-align: right;
+}
+
+.middleMileStone {
+  text-align: center;
+  width: 10%;
+}
+
+.rightMileStone {
+  width: 55%;
+}
+
+.leftMileStone p,
+.rightMileStone p {
+  margin-bottom: 0;
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 768px) {
+  .mileStoneTitle {
+    width: 100%;
+    text-align: center;
+  }
+}

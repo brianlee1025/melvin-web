@@ -1,36 +1,6 @@
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"),
-    url(./fonts/NotoSansSC-Regular.otf) format("otf");
-}
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"),
-    url(./fonts/NotoSansSC-Medium.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"),
-    url(./fonts/NotoSansSC-Black.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"), url(./fonts/NotoSansSC-Bold.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"),
-    url(./fonts/NotoSansSC-Light.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Noto Sans CJK SC";
-  src: local("Noto Sans CJK SC"), url(./fonts/NotoSansSC-Thin.otf) format("otf");
-}
+@import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 body {
   height: 100%;
@@ -40,15 +10,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  font-family: "Noto Sans CJK SC" !important;
+  font-family: "Noto Sans", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.bold {
+  font-weight: bold;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.noto-sans-sc {
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 /* For Mobile Phones */

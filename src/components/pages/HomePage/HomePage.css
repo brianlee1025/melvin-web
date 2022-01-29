@@ -5,15 +5,13 @@
 }
 
 .sectionTitle {
-  padding: 0.5em 0 0.5em 0;
   font-size: 4vh;
-  font-weight: bold;
   color: #234ea2;
+  margin-bottom: 1rem;
 }
 
 .sectionBody {
-  padding: 0 0 0.5em 0;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: black;
 }
 
