@@ -1,0 +1,19 @@
+.businessOpp ul {
+  list-style-position: inside;
+  padding-inline-start: 0;
+  color: black;
+  font-size: 1em;
+}
+
+.lastPart {
+  padding-bottom: 0.5rem;
+}
+
+.lastPart p {
+  line-height: 0.5rem;
+}
+
+.black {
+  color: black;
+  font-size: 1em;
+}

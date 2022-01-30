@@ -84,7 +84,7 @@ const HomePage = () => {
         {/* </Slide> */}
       </div>
 
-      <div className="w-100 mt-3">
+      <div className="w-100 mt-4">
         {/* <Slide right> */}
         <Image
           src={public_img_path + "our_business.jpg"}
@@ -95,7 +95,7 @@ const HomePage = () => {
         {/* </Slide> */}
       </div>
 
-      <div className="w-100 mt-3">
+      <div className="w-100 mt-4">
         {/* <Slide left> */}
         <div className="container">
           <Row>
@@ -134,7 +134,7 @@ const HomePage = () => {
         {/* </Slide> */}
       </div>
 
-      <div className="w-100 mt-3">
+      <div className="w-100 mt-4">
         {/* <Slide right> */}
         <div className="container">
           <Row>

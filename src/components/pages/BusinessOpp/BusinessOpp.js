@@ -6,44 +6,62 @@ const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const BusinessOpp = () => {
   return (
-    <div className="bussinessOpp">
+    <div className="businessOpp noto-sans-sc bold">
       <Image
+        className="mb-3"
         src={public_img_path + "business_opp_1.jpg"}
         fluid
         alt="Business Opportunity"
       />
       <div align="center" className="container">
         <Row>
-          <Col md={12} className="mt-4 mb-3">
-            <p>
-              We're interested in hearing from companies that would like to
-              become an agent or distributor for MMT market-leading food and
-              packaging products, innovative cleaning solutions and services.
-            </p>
-            <p>
-              We are continuously seeking qualified, commission-based agents or
-              distributors, who are eager and passionate about representing MMT
-              and extend our global reach and sales worldwide.
-            </p>
+          <Col md={12} className="mt-4">
+            <div className="contentPart black">
+              <p>
+                We're interested in hearing from companies that would like to
+                become an agent or distributor
+              </p>
+              <p>
+                for MMT market-leading food and packaging products, innovative
+                cleaning solutions and services.
+              </p>
+            </div>
+            <div className="contentPart black">
+              <p>
+                We are continuously seeking qualified, commission-based agents
+                or distributors,
+              </p>
+              <p>
+                who are eager and passionate about representing MMT and extend
+                our global reach and sales worldwide.
+              </p>
+            </div>
           </Col>
         </Row>
       </div>
       <Image
+        className="mb-3"
         src={public_img_path + "business_opp_2.jpg"}
         fluid
         alt="Business Opportunity"
       />
       <div align="left" className="container">
         <Row>
-          <Col md={12} className="mt-4 mb-3">
-            <p>
-              We value our agents and distributors as an integral element of
-              MMT's success. They are our eyes and ears at a local level,
-              working with our end customers to support them in their
-              development projects and production plant setups. Specifically, we
-              see potential to do business with people or companies who will
-              have:
-            </p>
+          <Col md={12} className="mt-3">
+            <div className="contentPart black">
+              <p>
+                We value our agents and distributors as an integral element of
+                MMT's success. They are our eyes and ears at a local level,
+              </p>
+              <p>
+                working with our end customers to support them in their
+                development projects and production plant setups.
+              </p>
+              <p>
+                Specifically, we see potential to do business with people or
+                companies who will have:
+              </p>
+            </div>
 
             <p>
               <ul>
@@ -78,7 +96,7 @@ const BusinessOpp = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="mt-4 mb-3">
+          <Col md={12} className="mb-3">
             <ul>
               <li>
                 Advanced, market leading food and packaging products, cleaning
@@ -102,12 +120,17 @@ const BusinessOpp = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="mt-4 mb-3">
-            <p>
-              Sales analysis, assist customer in understanding consumers culture
-              and improve in sales. Technical analysis, providing support in
-              hardware technical issues.
-            </p>
+          <Col md={12} className="mb-3 black">
+            <div className="lastPart">
+              <p>
+                Sales analysis, assist customer in understanding consumers
+                culture and improve in sales.
+              </p>
+              <p>
+                Technical analysis, providing support in hardware technical
+                issues.
+              </p>
+            </div>
             <p>
               We provide our customers in hardware facilities to keep their
               business in sustainable growth.

@@ -12,6 +12,7 @@ import WhatsAppButton from "./components/common/WhatsAppButton/WhatsAppButton";
 import PageNotFound from "./components/common/PageNotFound/PageNotFound";
 import AboutUs from "./components/pages/AboutUs/AboutUs";
 import BusinessOpp from "./components/pages/BusinessOpp/BusinessOpp";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
 import Footer from "./components/common/Footer/Footer";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/home" component={HomePage} />
             <Route path="/aboutUs" component={AboutUs} />
             <Route path="/business-opporturnities" component={BusinessOpp} />
+            <Route path="/contact-us" component={ContactUs} />
             <Route component={PageNotFound} />
           </Switch>
         </div>
