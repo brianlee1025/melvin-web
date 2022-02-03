@@ -3,7 +3,7 @@
 }
 
 .contentPart p {
-  line-height: 0.5rem;
+  line-height: 20px;
 }
 
 .aboutUsSectionBody {
@@ -11,33 +11,37 @@
   font-size: 1em;
 }
 
-.mileStoneTitle {
-  width: 50%;
-  text-align: right;
-}
-
 .mileStoneBodyContainer {
   width: 100%;
   display: flex;
 }
 
-.leftMileStone {
-  width: 35%;
-  text-align: right;
+.timeline-item-title {
+  font-size: 3vh !important;
+  color: #234ea2 !important;
+  word-spacing: 100vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.middleMileStone {
-  text-align: center;
-  width: 10%;
+.card-description {
+  font-size: 2vh !important;
+  color: black !important;
+  align-items: flex-start !important;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 15px !important;
+  line-height: 30px;
 }
 
-.rightMileStone {
-  width: 55%;
+.css-mpnodf-TimelineTitleWrapper {
+  width: 20% !important;
 }
 
-.leftMileStone p,
-.rightMileStone p {
-  margin-bottom: 0;
+.card-content-wrapper {
+  width: 70% !important;
 }
 
 /* For Mobile Phones */
@@ -45,5 +49,16 @@
   .mileStoneTitle {
     width: 100%;
     text-align: center;
+  }
+  .timeline-item-title {
+    font-size: 2vh !important;
+  }
+
+  .css-mpnodf-TimelineTitleWrapper {
+    width: 37% !important;
+  }
+
+  .card-content-wrapper {
+    width: 53% !important;
   }
 }

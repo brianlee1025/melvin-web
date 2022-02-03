@@ -73,7 +73,7 @@ const HomePage = () => {
                   fontSize: "1.5rem",
                 }}
                 onClick={() => {
-                  window.location.href = "/aboutUs";
+                  window.location = "/aboutUs";
                 }}
               >
                 Read More
@@ -122,7 +122,12 @@ const HomePage = () => {
               >
                 {Products.map((prod, index) => {
                   return (
-                    <Card key={index}>
+                    <Card
+                      key={index}
+                      onClick={() => {
+                        window.location = "/our-businesses";
+                      }}
+                    >
                       <Card.Img src={prod.img} alt={prod.alt} />
                     </Card>
                   );

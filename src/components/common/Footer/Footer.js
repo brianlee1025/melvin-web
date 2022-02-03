@@ -30,39 +30,34 @@ const Footer = () => {
           </Col>
           <Col md={3}>
             <p className="noto-sans-sc bold main-title">PRODUCTS</p>
-            <p>
-              <ul className="footerUl bottom-content">
-                {Products.map((item, index) => {
-                  return (
-                    <li
-                      className="footerLi"
-                      key={index}
-                      style={{ cursor: "pointer" }}
-                    >
-                      {item.title}
-                    </li>
-                  );
-                })}
-              </ul>
-            </p>
+            <ul className="footerUl bottom-content">
+              {Products.map((item, index) => {
+                return (
+                  <li
+                    className="footerLi"
+                    key={index}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      window.location = "/our-businesses";
+                    }}
+                  >
+                    {item.title}
+                  </li>
+                );
+              })}
+            </ul>
           </Col>
           <Col md={3}>
             <p className="noto-sans-sc bold main-title">SERVICES</p>
-            <p>
-              <ul className="footerUl bottom-content">
-                {Services.map((item, index) => {
-                  return (
-                    <li
-                      className="footerLi"
-                      key={index}
-                      style={{ cursor: "pointer" }}
-                    >
-                      {item.title}
-                    </li>
-                  );
-                })}
-              </ul>
-            </p>
+            <ul className="footerUl bottom-content">
+              {Services.map((item, index) => {
+                return (
+                  <li className="footerLi" key={index}>
+                    {item.title}
+                  </li>
+                );
+              })}
+            </ul>
           </Col>
           <Col md={3}>
             <p className="noto-sans-sc bold main-title">ADDRESS</p>

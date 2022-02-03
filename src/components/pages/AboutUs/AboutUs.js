@@ -1,10 +1,68 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
+import { Chrono } from "react-chrono";
 import "./AboutUs.css";
 
 const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const AboutUs = () => {
+  const items = [
+    {
+      title: "2015 Incorporated",
+      // cardTitle: "Dunkirk",
+      // url: "http://www.history.com",
+      // cardSubtitle:
+      // "Established in 2015 as MMT Trading. Main distributors in HALAL Market.",
+      // cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+      // media: {
+      //   type: "IMAGE",
+      //   source: {
+      //     url: "http://someurl/image.jpg"
+      //   }
+      // }
+    },
+    {
+      title: "2018",
+      // cardTitle: "Dunkirk",
+      // url: "http://www.history.com",
+      // cardSubtitle: "Bringing cleaning innovations and solutions.",
+      // cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+      // media: {
+      //   type: "IMAGE",
+      //   source: {
+      //     url: "http://someurl/image.jpg"
+      //   }
+      // }
+    },
+    {
+      title: "2020",
+      // cardTitle: "Dunkirk",
+      // url: "http://www.history.com",
+      // cardSubtitle:
+      // "Expanded into freight services industry. Provide complete ranges of services in freight forwarding, warhousing, distribution and customs brokerage.",
+      // cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+      // media: {
+      //   type: "IMAGE",
+      //   source: {
+      //     url: "http://someurl/image.jpg"
+      //   }
+      // }
+    },
+    {
+      title: " ",
+      // cardTitle: "Dunkirk",
+      // url: "http://www.history.com",
+      // cardSubtitle: "To be continued..",
+      // cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+      // media: {
+      //   type: "IMAGE",
+      //   source: {
+      //     url: "http://someurl/image.jpg"
+      //   }
+      // }
+    },
+  ];
+
   return (
     <div className="noto-sans-sc bold aboutUs">
       <Image src={public_img_path + "about_us_1.jpg"} fluid alt="About Us" />
@@ -128,48 +186,40 @@ const AboutUs = () => {
         </Row>
       </div>
       <Image src={public_img_path + "about_us_4.jpg"} fluid alt="About Us" />
-      <div className="container">
-        <Row>
-          <Col md={12} className="mt-4 sectionTitle">
-            <div className="mileStoneTitle">MILESTONE</div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="mt-4 mb-3">
-            <div className="mileStoneBodyContainer">
-              <div className="sectionTitle leftMileStone">
-                <p>2015</p>
-                <p>Incorporated</p>
-                <br />
-                <p>2018</p>
-                <br />
-                <p>2020</p>
+      <Row>
+        <Col sm={12} md={6} lg={6} className="mt-4 sectionTitle">
+          <div align="center">MILESTONE</div>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12} className="mt-1 mb-3">
+          <div style={{ width: "auto", height: "auto" }}>
+            <Chrono
+              items={items}
+              mode="VERTICAL"
+              hideControls={true}
+              theme={{ secondary: "transparent" }}
+            >
+              <div className="noto-sans-sc bold">
+                Established in 2015 as MMT Trading.
+                <br /> Main distributors in HALAL Market.
               </div>
-              <div className="middleMileStone">
-                {/* <Image
-                  src={public_img_path + "about_us_milestone.png"}
-                  fluid
-                  alt="Milestone"
-                /> */}
-              </div>
-              <div className="aboutUsSectionBody rightMileStone">
-                <p>Established in 2015 as MMT Trading.</p>
-                <p>Main distributors in HALAL Market.</p>
-                <br />
+              <div className="noto-sans-sc bold">
                 <p>Bringing cleaning innovations and solutions.</p>
-                <br />
-                <p>Expanded into freight services industry.</p>
-                <p>
-                  Provide complete ranges of services in freight forwarding,
-                  warhousing, distribution and customs brokerage.
-                </p>
-                <br />
-                <p>To be continued.</p>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </div>
+              <div className="noto-sans-sc bold">
+                Expanded into freight services industry.
+                <br />
+                Provide complete ranges of services in freight forwarding,
+                warhousing, distribution and customs brokerage.
+              </div>
+              <div className="noto-sans-sc bold">
+                <p>To be continued..</p>
+              </div>
+            </Chrono>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };
