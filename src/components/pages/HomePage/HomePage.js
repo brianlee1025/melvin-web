@@ -152,8 +152,8 @@ const HomePage = () => {
               <Row>
                 {Services.map((prod, index) => {
                   return (
-                    <Col md={4}>
-                      <Card key={index}>
+                    <Col md={4} key={index}>
+                      <Card className="serviceCard mb-2">
                         <Card.Img src={prod.img} alt={prod.alt} />
                         <Card.ImgOverlay>
                           {prod.title.toUpperCase()}

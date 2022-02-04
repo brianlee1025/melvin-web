@@ -57,3 +57,10 @@
 .react-multi-carousel-item:hover {
   transform: scale(1.01);
 }
+
+/* For Mobile Phones */
+@media only screen and (max-width: 768px) {
+  .serviceCard {
+    width: 90%;
+  }
+}
