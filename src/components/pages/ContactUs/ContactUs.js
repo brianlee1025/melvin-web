@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactUs.css";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Spinner } from "react-bootstrap";
+import emailjs from "@emailjs/browser";
 
 const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const ContactUs = () => {
+  const [loadingState, setLoadingState] = useState(false);
+
   const submit = (e) => {
+    setLoadingState(true);
     e.preventDefault();
     const elements = e.target.elements;
     const data = {
@@ -14,7 +18,28 @@ const ContactUs = () => {
       phoneNumber: elements.PhoneNo.value,
       message: elements.Message.value,
     };
-    console.log("body", data);
+
+    emailjs
+      .send(
+        "service_wgxmps5",
+        "template_zi18fsq",
+        data,
+        "user_1IVjxuLlr9OEFwH46in1r"
+      )
+      .then(
+        (result) => {
+          setLoadingState(false);
+          window.alert(
+            "Thank you for your enquiry. We will get back to you as soon as possible."
+          );
+        },
+        (error) => {
+          setLoadingState(false);
+          window.alert("Something went wrong. Please try again later.");
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
 
   return (
@@ -134,9 +159,15 @@ const ContactUs = () => {
           </Row>
           <Row className="mt-3">
             <Col md={12} className="bold">
-              <button type="submit" className="submitButton">
-                Submit
-              </button>
+              {!loadingState ? (
+                <button type="submit" className="submitButton">
+                  Submit
+                </button>
+              ) : (
+                <button className="submitButton" disabled>
+                  <Spinner animation="border" />
+                </button>
+              )}
             </Col>
           </Row>
         </form>
