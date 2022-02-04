@@ -68,32 +68,29 @@ const BusinessOpp = () => {
                   </p>
                 </div>
 
-                <p>
-                  <ul>
-                    <li>
-                      Enthusiasm for the MMT concept and a strong focus to be
-                      involved in developing the awareness and local presence of
-                      MMT by promoting and distributing its solutions and
-                      services across the food industry in your selected
-                      territory within the countries.
-                    </li>
-                    <li>
-                      Extensive industry experience in sales of processing
-                      systems and after-sales services to a variety of
-                      companies.
-                    </li>
-                    <li>
-                      An in-depth understanding of local/territory/global trends
-                      and markets shaping the future demand and supply of our
-                      products to the markets and affecting the broader
-                      operating environment of the industry.
-                    </li>
-                    <li>
-                      Ability to effectively engage with customers and new
-                      businesses who are keen on our business.
-                    </li>
-                  </ul>
-                </p>
+                <ul>
+                  <li>
+                    Enthusiasm for the MMT concept and a strong focus to be
+                    involved in developing the awareness and local presence of
+                    MMT by promoting and distributing its solutions and services
+                    across the food industry in your selected territory within
+                    the countries.
+                  </li>
+                  <li>
+                    Extensive industry experience in sales of processing systems
+                    and after-sales services to a variety of companies.
+                  </li>
+                  <li>
+                    An in-depth understanding of local/territory/global trends
+                    and markets shaping the future demand and supply of our
+                    products to the markets and affecting the broader operating
+                    environment of the industry.
+                  </li>
+                  <li>
+                    Ability to effectively engage with customers and new
+                    businesses who are keen on our business.
+                  </li>
+                </ul>
               </Col>
             </Row>
             <Row>
@@ -143,6 +140,14 @@ const BusinessOpp = () => {
                 </p>
               </Col>
             </Row>
+          </div>
+          <div className="container">
+            <Image
+              className="mb-3"
+              src={public_img_path + "business_opp_3.jpg"}
+              fluid
+              alt="Business Opportunity"
+            />
           </div>
         </div>
       ) : (
@@ -265,6 +270,14 @@ const BusinessOpp = () => {
                 </div>
               </Col>
             </Row>
+          </div>
+          <div className="container">
+            <Image
+              className="mb-3"
+              src={public_img_path + "business_opp_3.jpg"}
+              fluid
+              alt="Business Opportunity"
+            />
           </div>
         </div>
       )}

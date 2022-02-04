@@ -23,8 +23,7 @@ const Footer = () => {
             </p>
             <p className="mb-0 bottom-content">
               <GiRotaryPhone /> +6017-7217996
-            </p>
-            <p className="bottom-content">
+              <br />
               <MdEmail /> info@mmt.asia
             </p>
           </Col>

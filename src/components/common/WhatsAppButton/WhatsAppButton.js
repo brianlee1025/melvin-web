@@ -1,9 +1,13 @@
 import { React } from "react";
 import "./WhatsAppButton.css";
 import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaWindows } from "react-icons/fa";
 
 const WhatsAppButton = () => {
+  const sendWhatsapp = () => {
+    window.open("https://api.whatsapp.com/send?phone=0177217996");
+  };
+
   return (
     <>
       <OverlayTrigger
@@ -19,6 +23,7 @@ const WhatsAppButton = () => {
           className="whatsapp-button p-2 rounded-circle"
           variant="success"
           size="lg"
+          onClick={sendWhatsapp}
         >
           <FaWhatsapp className="whatsapp-icon" />
         </Button>
