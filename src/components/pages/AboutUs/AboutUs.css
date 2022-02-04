@@ -28,12 +28,6 @@
   font-size: 2vh !important;
   color: black !important;
   align-items: flex-start !important;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-left: 15px !important;
-  line-height: 30px;
 }
 
 .css-mpnodf-TimelineTitleWrapper {
@@ -44,12 +38,25 @@
   width: 70% !important;
 }
 
+/* For Desktop and Tablet */
+@media only screen and (min-width: 769px) {
+  .card-description {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 15px !important;
+    line-height: 30px;
+  }
+}
+
 /* For Mobile Phones */
 @media only screen and (max-width: 768px) {
   .mileStoneTitle {
     width: 100%;
     text-align: center;
   }
+
   .timeline-item-title {
     font-size: 2vh !important;
   }
@@ -60,5 +67,11 @@
 
   .card-content-wrapper {
     width: 53% !important;
+  }
+
+  .mobileVersion p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 30px;
   }
 }

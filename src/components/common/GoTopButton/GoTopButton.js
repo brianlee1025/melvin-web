@@ -37,11 +37,7 @@ const GoTopButton = () => {
             </Tooltip>
           }
         >
-          <Button
-            className="goToTopButton"
-            variant="secondary"
-            onClick={scrollToTop}
-          >
+          <Button className="goToTopButton" onClick={scrollToTop}>
             <FiArrowUp />
           </Button>
         </OverlayTrigger>
