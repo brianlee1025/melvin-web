@@ -39,7 +39,7 @@ const OurBusiness = () => {
           <Row className="justify-content-center">
             {PAU_SEDAP.map((item, index) => {
               return (
-                <Col className="productCol" sm={12} md={6} lg={4} key={index}>
+                <Col className="productCol" sm={6} md={6} lg={4} key={index}>
                   <Card>
                     <Card.Img
                       src={item.img}
@@ -62,7 +62,7 @@ const OurBusiness = () => {
           <Row className="justify-content-center">
             {DIM_SUM.map((item, index) => {
               return (
-                <Col className="productCol" sm={12} md={6} lg={4} key={index}>
+                <Col className="productCol" sm={6} md={6} lg={4} key={index}>
                   <Card>
                     <Card.Img
                       src={item.img}
@@ -85,7 +85,7 @@ const OurBusiness = () => {
           <Row className="justify-content-center">
             {RAMLY.map((item, index) => {
               return (
-                <Col className="productCol" sm={12} md={6} lg={6} key={index}>
+                <Col className="productCol" sm={6} md={6} lg={6} key={index}>
                   <Card>
                     <Card.Img
                       src={item.img}
@@ -135,7 +135,7 @@ const OurBusiness = () => {
               .fill()
               .map((item, index) => {
                 return (
-                  <Col className="productCol" sm={12} md={6} lg={4} key={index}>
+                  <Col className="productCol" sm={6} md={6} lg={4} key={index}>
                     <Card>
                       <Card.Img
                         src={CLEANING_PRODUCTS.img + (index + 1) + ".jpg"}
@@ -162,7 +162,7 @@ const OurBusiness = () => {
               .fill()
               .map((item, index) => {
                 return (
-                  <Col className="productCol" sm={12} md={6} lg={4} key={index}>
+                  <Col className="productCol" sm={6} md={6} lg={4} key={index}>
                     <Card>
                       <Card.Img
                         src={PACKAGING_PRODUCTS.img + (index + 1) + ".jpg"}
