@@ -76,12 +76,12 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle bold">
+              <Col md={12} className="mt-5 sectionTitle bold">
                 FROZEN FOOD SPECIALIST
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="aboutUsSectionBody mt-1">
+              <Col md={12} className="aboutUsSectionBody">
                 <div className="contentPart">
                   <p>
                     Since its inception in 2015, MMT Trading has been
@@ -122,18 +122,19 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-5"
             src={public_img_path + "about_us_2.jpg"}
             fluid
             alt="About Us"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle bold">
+              <Col md={12} className="mt-5 sectionTitle bold">
                 CLEANING SOLUTION
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="aboutUsSectionBody mt-1">
+              <Col md={12} className="aboutUsSectionBody">
                 <div className="contentPart">
                   <p>
                     In 2018, MMT has been bringing cleaning innovations and
@@ -157,18 +158,19 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-5"
             src={public_img_path + "about_us_3.jpg"}
             fluid
             alt="About Us"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle bold">
+              <Col md={12} className="mt-5 sectionTitle bold">
                 FREIGHT SERVICES
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="aboutUsSectionBody mt-1">
+              <Col md={12} className="aboutUsSectionBody">
                 <div className="contentPart">
                   <p>
                     In 2020, MMT has expanded its businesses into freight
@@ -202,17 +204,18 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-5"
             src={public_img_path + "about_us_4.jpg"}
             fluid
             alt="About Us"
           />
           <Row>
-            <Col sm={12} md={6} lg={6} className="mt-4 sectionTitle bold">
+            <Col sm={12} md={6} lg={6} className="mt-5 sectionTitle bold">
               <div align="center">MILESTONE</div>
             </Col>
           </Row>
           <Row>
-            <Col md={12} className="mt-1 mb-3">
+            <Col md={12} className="mt-1 mb-5">
               <div style={{ width: "auto", height: "auto" }}>
                 <Chrono
                   items={items}
@@ -251,7 +254,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-2 sectionTitle bold">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 FROZEN FOOD SPECIALIST
               </Col>
             </Row>
@@ -281,13 +284,14 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-4"
             src={public_img_path + "about_us_2.jpg"}
             fluid
             alt="About Us"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-1 sectionTitle bold">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 CLEANING SOLUTION
               </Col>
             </Row>
@@ -308,13 +312,14 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-4"
             src={public_img_path + "about_us_3.jpg"}
             fluid
             alt="About Us"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-1 sectionTitle bold">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 FREIGHT SERVICES
               </Col>
             </Row>
@@ -340,12 +345,13 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
+            className="mt-4"
             src={public_img_path + "about_us_4.jpg"}
             fluid
             alt="About Us"
           />
           <Row>
-            <Col sm={12} md={6} lg={6} className="mt-2 sectionTitle bold">
+            <Col sm={12} md={6} lg={6} className="mt-5 sectionTitle bold">
               <div align="center">MILESTONE</div>
             </Col>
           </Row>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Container, NavDropdown, Image } from "react-bootstrap";
 import { menus } from "../../enum/NavBarMenu";
 import "./NavBar.css";
@@ -6,6 +6,20 @@ import "./NavBar.css";
 const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const NavBar = () => {
+  const [showDropDown, setShowDropDown] = useState(menus.map((x) => false));
+
+  const onHoverUpdateDropDown = (value, index) => {
+    const clone = [...showDropDown];
+    clone[index] = value;
+    setShowDropDown(clone);
+  };
+
+  const onClickUpdateDropDown = (index) => {
+    const clone = [...showDropDown];
+    clone[index] = !clone[index];
+    setShowDropDown(clone);
+  };
+
   return (
     <Navbar
       collapseOnSelect
@@ -34,9 +48,13 @@ const NavBar = () => {
             {menus.map((menu, index) => {
               return menu.dropDown ? (
                 <NavDropdown
+                  onMouseEnter={(e) => onHoverUpdateDropDown(true, index)}
+                  onMouseLeave={(e) => onHoverUpdateDropDown(false, index)}
+                  onClick={(e) => onClickUpdateDropDown(index)}
                   key={index}
                   className="navDropDown"
                   title={menu.name.toUpperCase()}
+                  show={showDropDown[index]}
                 >
                   {menu.dropDownItems.map((item, j) => {
                     return item.dropDown ? (
