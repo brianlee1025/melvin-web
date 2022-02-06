@@ -3,26 +3,31 @@ export const Products = [
     img: "/img/products/pau_sedap.jpg",
     title: "Pau Sedap",
     alt: "MMT Trading - Pau Sedap",
+    url: "/pau-sedap",
   },
   {
     img: "/img/products/ramly.jpg",
     title: "Ramly",
     alt: "MMT Trading - Ramly",
+    url: "/ramly",
   },
   {
     img: "/img/products/my_lacta.jpg",
     title: "My Lacta",
     alt: "MMT Trading - My Lacta",
+    url: "/my-lacta",
   },
   {
     img: "/img/products/cleaning_products.jpg",
     title: "Cleaning Products",
     alt: "MMT Trading - Cleaning Products",
+    url: "/cleaning-products",
   },
   {
     img: "/img/products/packaging_products.jpg",
     title: "Packaging Products",
     alt: "MMT Trading - Packaging Products",
+    url: "/packaging-products",
   },
 ];
 

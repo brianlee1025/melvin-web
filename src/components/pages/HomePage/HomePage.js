@@ -70,6 +70,7 @@ const HomePage = () => {
                 </Col>
                 <Col md={12} className="sectionBody mb-2">
                   <Button
+                    className="readMoreBtn"
                     size="lg"
                     style={{
                       backgroundColor: "transparent",
@@ -214,6 +215,7 @@ const HomePage = () => {
                 </Col>
                 <Col md={12} className="sectionBody mb-2">
                   <Button
+                    className="readMoreBtn"
                     size="lg"
                     style={{
                       backgroundColor: "transparent",
@@ -274,7 +276,7 @@ const HomePage = () => {
                           className="productCard"
                           key={index}
                           onClick={() => {
-                            window.location = "/our-businesses";
+                            window.location = "/our-businesses" + prod.url;
                           }}
                         >
                           <Card.Img src={prod.img} alt={prod.alt} />
