@@ -2,7 +2,6 @@ import React from "react";
 import "./HomePage.css";
 import ReactPlayer from "react-player";
 import { Button, Card, Col, Image, Row } from "react-bootstrap";
-// import Slide from "react-reveal/Slide";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Products } from "../../enum/Products";
@@ -46,7 +45,6 @@ const HomePage = () => {
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide left> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -86,22 +84,18 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide right> */}
             <Image
               src={public_img_path + "our_business.jpg"}
               fluid
               alt="our-busineess img"
               style={{ cursor: "pointer" }}
             />
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide left> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -142,11 +136,9 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-3">
-            {/* <Slide right> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -172,7 +164,6 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
         </div>
       ) : (
@@ -191,7 +182,6 @@ const HomePage = () => {
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide left> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -231,22 +221,18 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide right> */}
             <Image
               src={public_img_path + "our_business.jpg"}
               fluid
               alt="our-busineess img"
               style={{ cursor: "pointer" }}
             />
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-4">
-            {/* <Slide left> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -287,11 +273,9 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
 
           <div className="w-100 mt-5">
-            {/* <Slide right> */}
             <div className="container">
               <Row>
                 <Col md={12} className="noto-sans-sc bold sectionTitle">
@@ -317,7 +301,6 @@ const HomePage = () => {
                 </Col>
               </Row>
             </div>
-            {/* </Slide> */}
           </div>
         </div>
       )}
