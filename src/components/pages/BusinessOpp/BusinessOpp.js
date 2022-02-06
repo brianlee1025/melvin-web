@@ -12,14 +12,13 @@ const BusinessOpp = () => {
       {width > 768 ? (
         <div>
           <Image
-            className="mb-3"
             src={public_img_path + "business_opp_1.jpg"}
             fluid
             alt="Business Opportunity"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4">
+              <Col md={12} className="mt-5">
                 <div className="contentPart black">
                   <p>
                     We're interested in hearing from companies that would like
@@ -44,7 +43,7 @@ const BusinessOpp = () => {
             </Row>
           </div>
           <Image
-            className="mt-4"
+            className="mt-5 mb-3"
             src={public_img_path + "business_opp_2.jpg"}
             fluid
             alt="Business Opportunity"
@@ -94,12 +93,12 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle bold">
+              <Col md={12} className="mt-5 sectionTitle bold">
                 WHAT CAN WE OFFER YOU
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="mb-3">
+              <Col md={12}>
                 <ul>
                   <li>
                     Advanced, market leading food and packaging products,
@@ -118,12 +117,12 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle bold">
+              <Col md={12} className="mt-5 sectionTitle bold">
                 WHAT SUPPORT WE GIVE TO OUR CUSTOMER:
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="mb-3 black">
+              <Col md={12} className="black">
                 <div>
                   <p>
                     Sales analysis, assist customer in understanding consumers
@@ -141,9 +140,9 @@ const BusinessOpp = () => {
               </Col>
             </Row>
           </div>
-          <div className="container">
+          <div className="mt-5 container">
             <Image
-              className="mt-4 mb-4"
+              className="mt-5 mb-5"
               src={public_img_path + "business_opp_3.jpg"}
               fluid
               alt="Business Opportunity"
@@ -153,14 +152,14 @@ const BusinessOpp = () => {
       ) : (
         <div className="mobileVersion">
           <Image
-            className="mb-3"
+            className="mb-2"
             src={public_img_path + "business_opp_1.jpg"}
             fluid
             alt="Business Opportunity"
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-1">
+              <Col md={12} className="mt-4">
                 <div className="black">
                   <p>
                     We're interested in hearing from companies that would like
@@ -181,7 +180,7 @@ const BusinessOpp = () => {
             </Row>
           </div>
           <Image
-            className="mt-1"
+            className="mt-4 mb-3"
             src={public_img_path + "business_opp_2.jpg"}
             fluid
             alt="Business Opportunity"
@@ -195,6 +194,7 @@ const BusinessOpp = () => {
                     of MMT's success. They are our eyes and ears at a local
                     level, working with our end customers to support them in
                     their development projects and production plant setups.{" "}
+                    <br />
                     <br />
                     Specifically, we see potential to do business with people or
                     companies who will have:
@@ -227,12 +227,12 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle">
+              <Col md={12} className="mt-3 sectionTitle bold">
                 WHAT CAN WE OFFER YOU
               </Col>
             </Row>
             <Row>
-              <Col md={12}>
+              <Col md={12} className="mt-3">
                 <ul>
                   <li>
                     Advanced, market leading food and packaging products,
@@ -251,12 +251,12 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 WHAT SUPPORT WE GIVE TO OUR CUSTOMER:
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="black">
+              <Col md={12} className="mt-3 black">
                 <div>
                   <p>
                     Sales analysis, assist customer in understanding consumers
@@ -273,7 +273,7 @@ const BusinessOpp = () => {
           </div>
           <div className="container">
             <Image
-              className="mt-4 mb-3"
+              className="mt-5 mb-2"
               src={public_img_path + "business_opp_3.jpg"}
               fluid
               alt="Business Opportunity"
