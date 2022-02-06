@@ -42,6 +42,11 @@
   cursor: pointer;
 }
 
+.productCard {
+  max-width: 400px;
+  max-height: 400px;
+}
+
 .card-img-overlay {
   width: 100%;
   height: 100%;
@@ -55,12 +60,28 @@
 }
 
 .react-multi-carousel-item:hover {
+  transform: scale(1.02);
+}
+
+.serviceCard {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.serviceCard:hover {
   transform: scale(1.01);
+}
+
+.serviceCard:hover .card-img-overlay {
+  font-size: 2em;
+  color: #234ea2;
+  opacity: 80%;
 }
 
 /* For Mobile Phones */
 @media only screen and (max-width: 768px) {
   .serviceCard {
-    width: 90%;
+    max-width: 300px;
+    max-height: 300px;
   }
 }

@@ -72,7 +72,34 @@ export const menus = [
   {
     name: "Our Businesses",
     url: "/our-businesses",
-    dropDown: false,
+    dropDown: true,
+    dropDownItems: [
+      {
+        name: "Pau Sedap",
+        url: "/pau-sedap",
+        dropDown: false,
+      },
+      {
+        name: "Ramly",
+        url: "/ramly",
+        dropDown: false,
+      },
+      {
+        name: "My Lacta",
+        url: "/my-lacta",
+        dropDown: false,
+      },
+      {
+        name: "Cleaning Products",
+        url: "/cleaning-products",
+        dropDown: false,
+      },
+      {
+        name: "Packaging Products",
+        url: "/packaging-products",
+        dropDown: false,
+      },
+    ],
   },
   {
     name: "Business Opportunities",

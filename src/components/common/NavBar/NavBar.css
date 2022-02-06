@@ -7,15 +7,18 @@
 }
 
 .nav-link:hover,
-.navDropDown .nav-link:hover,
-.navDropDownItem:hover {
+.navDropDown .nav-link:hover {
   font-weight: bold;
   /* color: forestgreen !important; */
 }
 
-.dropdown-menu .show {
-  width: 100% !important;
-  display: contents;
+.navDropDownItem:hover {
+  background-color: #0d6efd;
+}
+
+.dropdown-menu {
+  width: auto;
+  background-color: #234ea2;
 }
 
 .mmtLogo {
@@ -27,6 +30,7 @@
 /* For Mobile Phones */
 @media only screen and (max-width: 768px) {
   .dropdown-menu {
+    width: 100%;
     text-align: right !important;
     float: right !important;
     min-width: 40% !important;

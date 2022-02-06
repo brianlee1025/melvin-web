@@ -33,28 +33,45 @@ const NavBar = () => {
           >
             {menus.map((menu, index) => {
               return menu.dropDown ? (
-                <NavDropdown className="navDropDown" title={menu.name}>
+                <NavDropdown
+                  key={index}
+                  className="navDropDown"
+                  title={menu.name.toUpperCase()}
+                >
                   {menu.dropDownItems.map((item, j) => {
                     return item.dropDown ? (
-                      <NavDropdown className="navDropDown" title={item.name}>
+                      <NavDropdown
+                        className="navDropDown"
+                        title={item.name.toUpperCase()}
+                        key={j}
+                      >
                         {item.dropDropItems.map((moreItem, k) => {
                           return (
                             <NavDropdown.Item
                               className="navDropDownItem"
+                              key={k}
                               eventKey={k}
                             >
-                              {moreItem.name}
+                              {moreItem.name.toUpperCase()}
                             </NavDropdown.Item>
                           );
                         })}
                       </NavDropdown>
                     ) : (
-                      <NavDropdown.Item
-                        className="navDropDownItem"
-                        eventKey={j}
-                      >
-                        {item.name}
-                      </NavDropdown.Item>
+                      <div key={j}>
+                        <NavDropdown.Item
+                          className="navDropDownItem bold"
+                          eventKey={j}
+                          onClick={() => {
+                            window.location = menu.url + item.url;
+                          }}
+                        >
+                          {item.name.toUpperCase()}
+                        </NavDropdown.Item>
+                        {j !== menu.dropDownItems.length - 1 && (
+                          <NavDropdown.Divider />
+                        )}
+                      </div>
                     );
                   })}
                 </NavDropdown>

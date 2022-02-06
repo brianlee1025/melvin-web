@@ -32,7 +32,7 @@ function App() {
             />
             <Route path="/home" component={HomePage} />
             <Route path="/aboutUs" component={AboutUs} />
-            <Route path="/our-businesses" component={OurBusiness} />
+            <Route path="/our-businesses/:product?" component={OurBusiness} />
             <Route path="/business-opporturnities" component={BusinessOpp} />
             <Route path="/contact-us" component={ContactUs} />
             <Route component={PageNotFound} />

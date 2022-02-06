@@ -66,7 +66,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="noto-sans-sc bold aboutUs">
+    <div className="noto-sans-sc aboutUs">
       {width > 768 ? (
         <div>
           <Image
@@ -76,7 +76,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 FROZEN FOOD SPECIALIST
               </Col>
             </Row>
@@ -128,7 +128,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 CLEANING SOLUTION
               </Col>
             </Row>
@@ -163,7 +163,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-4 sectionTitle">
+              <Col md={12} className="mt-4 sectionTitle bold">
                 FREIGHT SERVICES
               </Col>
             </Row>
@@ -207,7 +207,7 @@ const AboutUs = () => {
             alt="About Us"
           />
           <Row>
-            <Col sm={12} md={6} lg={6} className="mt-4 sectionTitle">
+            <Col sm={12} md={6} lg={6} className="mt-4 sectionTitle bold">
               <div align="center">MILESTONE</div>
             </Col>
           </Row>
@@ -221,20 +221,20 @@ const AboutUs = () => {
                   scrollable={true}
                   theme={{ secondary: "transparent" }}
                 >
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     Established in 2015 as MMT Trading.
                     <br /> Main distributors in HALAL Market.
                   </div>
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     <p>Bringing cleaning innovations and solutions.</p>
                   </div>
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     Expanded into freight services industry.
                     <br />
                     Provide complete ranges of services in freight forwarding,
                     warhousing, distribution and customs brokerage.
                   </div>
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     <p>To be continued..</p>
                   </div>
                 </Chrono>
@@ -251,7 +251,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-2 sectionTitle">
+              <Col md={12} className="mt-2 mb-2 sectionTitle bold">
                 FROZEN FOOD SPECIALIST
               </Col>
             </Row>
@@ -287,7 +287,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-1 sectionTitle">
+              <Col md={12} className="mt-2 mb-1 sectionTitle bold">
                 CLEANING SOLUTION
               </Col>
             </Row>
@@ -314,7 +314,7 @@ const AboutUs = () => {
           />
           <div align="center" className="container">
             <Row>
-              <Col md={12} className="mt-2 mb-1 sectionTitle">
+              <Col md={12} className="mt-2 mb-1 sectionTitle bold">
                 FREIGHT SERVICES
               </Col>
             </Row>
@@ -345,7 +345,7 @@ const AboutUs = () => {
             alt="About Us"
           />
           <Row>
-            <Col sm={12} md={6} lg={6} className="mt-2 sectionTitle">
+            <Col sm={12} md={6} lg={6} className="mt-2 sectionTitle bold">
               <div align="center">MILESTONE</div>
             </Col>
           </Row>
@@ -359,20 +359,20 @@ const AboutUs = () => {
                   scrollable={true}
                   theme={{ secondary: "transparent" }}
                 >
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     Established in 2015 as MMT Trading.
                     <br /> Main distributors in HALAL Market.
                   </div>
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     Bringing cleaning innovations and solutions.
                   </div>
-                  <div className="noto-sans-sc bold">
+                  <div className="noto-sans-sc">
                     Expanded into freight services industry.
                     <br />
                     Provide complete ranges of services in freight forwarding,
                     warhousing, distribution and customs brokerage.
                   </div>
-                  <div className="noto-sans-sc bold">To be continued..</div>
+                  <div className="noto-sans-sc">To be continued..</div>
                 </Chrono>
               </div>
             </Col>

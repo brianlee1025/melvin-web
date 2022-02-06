@@ -8,7 +8,7 @@ const BusinessOpp = () => {
   const { innerWidth: width } = window;
 
   return (
-    <div className="businessOpp noto-sans-sc bold">
+    <div className="businessOpp noto-sans-sc">
       {width > 768 ? (
         <div>
           <Image
@@ -44,14 +44,14 @@ const BusinessOpp = () => {
             </Row>
           </div>
           <Image
-            className="mb-3"
+            className="mt-4"
             src={public_img_path + "business_opp_2.jpg"}
             fluid
             alt="Business Opportunity"
           />
-          <div align="left" className="container">
+          <div align="left" className="container mt-5">
             <Row>
-              <Col md={12} className="mt-3">
+              <Col md={12}>
                 <div className="contentPart black">
                   <p>
                     We value our agents and distributors as an integral element
@@ -94,7 +94,7 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle">
+              <Col md={12} className="sectionTitle bold">
                 WHAT CAN WE OFFER YOU
               </Col>
             </Row>
@@ -118,13 +118,13 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="sectionTitle">
+              <Col md={12} className="sectionTitle bold">
                 WHAT SUPPORT WE GIVE TO OUR CUSTOMER:
               </Col>
             </Row>
             <Row>
               <Col md={12} className="mb-3 black">
-                <div className="lastPart">
+                <div>
                   <p>
                     Sales analysis, assist customer in understanding consumers
                     culture and improve in sales.
@@ -143,7 +143,7 @@ const BusinessOpp = () => {
           </div>
           <div className="container">
             <Image
-              className="mb-3"
+              className="mt-4 mb-4"
               src={public_img_path + "business_opp_3.jpg"}
               fluid
               alt="Business Opportunity"
@@ -181,14 +181,14 @@ const BusinessOpp = () => {
             </Row>
           </div>
           <Image
-            className="mb-3"
+            className="mt-1"
             src={public_img_path + "business_opp_2.jpg"}
             fluid
             alt="Business Opportunity"
           />
-          <div align="left" className="container">
+          <div align="left" className="container mt-4">
             <Row>
-              <Col md={12} className="mt-1">
+              <Col md={12}>
                 <div className="black">
                   <p>
                     We value our agents and distributors as an integral element
@@ -232,7 +232,7 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="mb-1">
+              <Col md={12}>
                 <ul>
                   <li>
                     Advanced, market leading food and packaging products,
@@ -256,8 +256,8 @@ const BusinessOpp = () => {
               </Col>
             </Row>
             <Row>
-              <Col md={12} className="mb-1 black">
-                <div className="lastPart">
+              <Col md={12} className="black">
+                <div>
                   <p>
                     Sales analysis, assist customer in understanding consumers
                     culture and improve in sales. Technical analysis, providing
@@ -273,7 +273,7 @@ const BusinessOpp = () => {
           </div>
           <div className="container">
             <Image
-              className="mb-3"
+              className="mt-4 mb-3"
               src={public_img_path + "business_opp_3.jpg"}
               fluid
               alt="Business Opportunity"

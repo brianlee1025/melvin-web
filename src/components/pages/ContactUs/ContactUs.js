@@ -46,7 +46,7 @@ const ContactUs = () => {
     <div className="noto-sans-sc">
       <Image
         className="mb-3"
-        src={public_img_path + "business_opp_1.jpg"}
+        src={public_img_path + "contact_us_1.png"}
         fluid
         alt="Contact Us"
       />
@@ -57,7 +57,7 @@ const ContactUs = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="bold black">
+          <Col md={12} className="black">
             <div className="contentPart">
               <p>Headquarter Office</p>
               <p>
@@ -84,7 +84,7 @@ const ContactUs = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="bold black">
+          <Col md={12} className="black">
             +(60)17-7217996
           </Col>
         </Row>
@@ -94,7 +94,7 @@ const ContactUs = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="bold black">
+          <Col md={12} className="black">
             info@mmt.asia
           </Col>
         </Row>
@@ -105,10 +105,10 @@ const ContactUs = () => {
         </Row>
         <form onSubmit={submit}>
           <Row className="mt-2">
-            <Col md={2} className="bold black mb-2">
+            <Col md={2} className="black mb-2">
               Name
             </Col>
-            <Col md={10} className="bold black">
+            <Col md={10} className="black">
               <input
                 type="text"
                 className="inputBox"
@@ -118,10 +118,10 @@ const ContactUs = () => {
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col md={2} className="bold black mb-2">
+            <Col md={2} className="black mb-2">
               Email Address
             </Col>
-            <Col md={10} className="bold black">
+            <Col md={10} className="black">
               <input
                 type="text"
                 className="inputBox"
@@ -131,10 +131,10 @@ const ContactUs = () => {
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col md={2} className="bold black mb-2">
+            <Col md={2} className="black mb-2">
               Phone Number
             </Col>
-            <Col md={10} className="bold black">
+            <Col md={10} className="black">
               <input
                 type="text"
                 className="inputBox"
@@ -144,10 +144,10 @@ const ContactUs = () => {
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col md={2} className="bold black mb-2">
+            <Col md={2} className="black mb-2">
               Message
             </Col>
-            <Col md={10} className="bold black">
+            <Col md={10} className="black">
               <textarea
                 className="inputBox"
                 cols="40"
@@ -158,7 +158,7 @@ const ContactUs = () => {
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col md={12} className="bold">
+            <Col md={12}>
               {!loadingState ? (
                 <button type="submit" className="submitButton">
                   Submit

@@ -3,14 +3,7 @@
   padding-inline-start: 0;
   color: black;
   font-size: 1em;
-}
-
-.lastPart {
-  padding-bottom: 0.5rem;
-}
-
-.lastPart p {
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .black {
