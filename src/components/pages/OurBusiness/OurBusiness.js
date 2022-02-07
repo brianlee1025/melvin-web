@@ -25,7 +25,7 @@ const OurBusiness = () => {
   }, [showLoading]);
 
   useEffect(() => {
-    if (product && imageLoaded === 80) {
+    if (product && imageLoaded === 79) {
       const element = document.getElementById(product);
       element.scrollIntoView({ behavior: "smooth" });
     }

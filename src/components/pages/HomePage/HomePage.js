@@ -125,7 +125,7 @@ const HomePage = () => {
                           className="productCard"
                           key={index}
                           onClick={() => {
-                            window.location = "/our-businesses";
+                            window.location.href = "/our-businesses" + prod.url;
                           }}
                         >
                           <Card.Img src={prod.img} alt={prod.alt} />
@@ -262,7 +262,7 @@ const HomePage = () => {
                           className="productCard"
                           key={index}
                           onClick={() => {
-                            window.location = "/our-businesses" + prod.url;
+                            window.location.href = "/our-businesses" + prod.url;
                           }}
                         >
                           <Card.Img src={prod.img} alt={prod.alt} />
