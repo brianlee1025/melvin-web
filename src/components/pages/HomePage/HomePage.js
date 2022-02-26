@@ -155,7 +155,13 @@ const HomePage = () => {
                     {Services.map((prod, index) => {
                       return (
                         <Col md={6} key={index}>
-                          <Card className="serviceCard mb-5">
+                          <Card
+                            className="serviceCard mb-5"
+                            onClick={() => {
+                              window.location.href =
+                                "/our-businesses/our-services" + prod.url;
+                            }}
+                          >
                             <Card.Img src={prod.img} alt={prod.alt} />
                             <Card.ImgOverlay className="noto-sans-sc bold">
                               {prod.title.toUpperCase()}
@@ -293,7 +299,13 @@ const HomePage = () => {
                     {Services.map((prod, index) => {
                       return (
                         <Col md={6} key={index}>
-                          <Card className="serviceCard mb-4">
+                          <Card
+                            className="serviceCard mb-4"
+                            onClick={() => {
+                              window.location.href =
+                                "/our-businesses/our-services" + prod.url;
+                            }}
+                          >
                             <Card.Img src={prod.img} alt={prod.alt} />
                             <Card.ImgOverlay className="noto-sans-sc bold">
                               {prod.title.toUpperCase()}
