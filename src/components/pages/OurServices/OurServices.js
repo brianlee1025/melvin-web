@@ -67,6 +67,11 @@ const OurServices = (props) => {
               <span
                 onClick={() => {
                   scrollToService("air_freight");
+                  window.history.replaceState(
+                    null,
+                    "Our Services",
+                    "/our-businesses/our-services/air-freight"
+                  );
                 }}
               >
                 Air Freight
@@ -74,6 +79,11 @@ const OurServices = (props) => {
               <span
                 onClick={() => {
                   scrollToService("sea_freight");
+                  window.history.replaceState(
+                    null,
+                    "Our Services",
+                    "/our-businesses/our-services/sea-freight"
+                  );
                 }}
               >
                 Sea Freight
@@ -81,6 +91,11 @@ const OurServices = (props) => {
               <span
                 onClick={() => {
                   scrollToService("customs");
+                  window.history.replaceState(
+                    null,
+                    "Our Services",
+                    "/our-businesses/our-services/customs"
+                  );
                 }}
               >
                 Customs
@@ -88,6 +103,11 @@ const OurServices = (props) => {
               <span
                 onClick={() => {
                   scrollToService("inland_transportation");
+                  window.history.replaceState(
+                    null,
+                    "Our Services",
+                    "/our-businesses/our-services/inland-transportation"
+                  );
                 }}
               >
                 Inland Transportation
