@@ -1,0 +1,26 @@
+.servicesCol span {
+  padding-right: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.top-background {
+  background-image: linear-gradient(
+    to right bottom,
+    #234ea2,
+    #476db5,
+    #698cc7,
+    #8eacd7,
+    #b6cce7
+  );
+}
+
+.serviceTitle {
+  color: black;
+  font-size: 2vh;
+}
+
+.serviceBody {
+  color: black;
+  text-align: justify;
+}

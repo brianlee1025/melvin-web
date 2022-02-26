@@ -24,7 +24,9 @@ const Footer = () => {
             <p className="mb-0 bottom-content">
               <GiRotaryPhone /> +6017-7217996
               <br />
-              <MdEmail /> info@mmt.asia
+              <a className="emailHref" href="mailto: info@mmt.asia">
+                <MdEmail /> info@mmt.asia
+              </a>
             </p>
           </Col>
           <Col md={3}>
@@ -37,7 +39,8 @@ const Footer = () => {
                     key={index}
                     style={{ cursor: "pointer" }}
                     onClick={() => {
-                      window.location = "/our-businesses";
+                      window.location =
+                        "/our-businesses/our-products" + item.url;
                     }}
                   >
                     {item.title}
@@ -51,7 +54,15 @@ const Footer = () => {
             <ul className="footerUl bottom-content">
               {Services.map((item, index) => {
                 return (
-                  <li className="footerLi" key={index}>
+                  <li
+                    className="footerLi"
+                    key={index}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      window.location =
+                        "/our-businesses/our-services" + item.url;
+                    }}
+                  >
                     {item.title}
                   </li>
                 );

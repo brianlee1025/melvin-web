@@ -92,6 +92,9 @@ const HomePage = () => {
               fluid
               alt="our-busineess img"
               style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.location = "/our-businesses";
+              }}
             />
           </div>
 
@@ -125,7 +128,7 @@ const HomePage = () => {
                           className="productCard"
                           key={index}
                           onClick={() => {
-                            window.location = "/our-businesses";
+                            window.location.href = "/our-businesses" + prod.url;
                           }}
                         >
                           <Card.Img src={prod.img} alt={prod.alt} />
@@ -150,8 +153,8 @@ const HomePage = () => {
                   <Row>
                     {Services.map((prod, index) => {
                       return (
-                        <Col md={4} key={index}>
-                          <Card className="serviceCard mb-2">
+                        <Col md={6} key={index}>
+                          <Card className="serviceCard mb-5">
                             <Card.Img src={prod.img} alt={prod.alt} />
                             <Card.ImgOverlay className="noto-sans-sc bold">
                               {prod.title.toUpperCase()}
@@ -262,7 +265,7 @@ const HomePage = () => {
                           className="productCard"
                           key={index}
                           onClick={() => {
-                            window.location = "/our-businesses" + prod.url;
+                            window.location.href = "/our-businesses" + prod.url;
                           }}
                         >
                           <Card.Img src={prod.img} alt={prod.alt} />
@@ -287,7 +290,7 @@ const HomePage = () => {
                   <Row>
                     {Services.map((prod, index) => {
                       return (
-                        <Col md={4} key={index}>
+                        <Col md={6} key={index}>
                           <Card className="serviceCard mb-4">
                             <Card.Img src={prod.img} alt={prod.alt} />
                             <Card.ImgOverlay className="noto-sans-sc bold">

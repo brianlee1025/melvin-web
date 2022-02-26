@@ -1,0 +1,67 @@
+.ourBusiness .productCol {
+  padding: 1em 1em 1em 1em;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.full-spinner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: gainsboro;
+  opacity: 50%;
+}
+
+.spinner-border {
+  color: #234ea2;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+}
+
+.miniNavBar {
+  height: 100vh;
+  position: fixed;
+  top: 25%;
+  left: 23px;
+}
+
+.miniNavBar div {
+  width: 10px;
+  height: 10vh;
+  margin-bottom: 2px;
+  background-color: #234ea2;
+}
+
+.navBarButton {
+  position: fixed;
+  top: 20%;
+  left: 10px;
+  background-color: #234ea2;
+}
+
+.button-tooltip {
+  cursor: pointer;
+}
+
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+}
+.fadeIn {
+  opacity: 1;
+  transition: width 0.1s, height 0.1s, opacity 0.1s 0.1s;
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 768px) {
+  .ourBusiness .productCol {
+    max-height: 200px;
+    max-width: 200px;
+  }
+}

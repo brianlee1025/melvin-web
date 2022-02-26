@@ -158,7 +158,7 @@ const AboutUs = () => {
             </Row>
           </div>
           <Image
-            className="mt-5"
+            className="mt-4"
             src={public_img_path + "about_us_3.jpg"}
             fluid
             alt="About Us"

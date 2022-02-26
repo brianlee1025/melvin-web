@@ -14,7 +14,9 @@ import AboutUs from "./components/pages/AboutUs/AboutUs";
 import BusinessOpp from "./components/pages/BusinessOpp/BusinessOpp";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
 import Footer from "./components/common/Footer/Footer";
-import OurBusiness from "./components/pages/OurBusiness/OurBusiness";
+import OurProducts from "./components/pages/OurProducts/OurProducts";
+import OurServices from "./components/pages/OurServices/OurServices";
+import OurBusinesses from "./components/pages/OurBusinesses/OurBusinesses";
 
 function App() {
   return (
@@ -32,7 +34,17 @@ function App() {
             />
             <Route path="/home" component={HomePage} />
             <Route path="/aboutUs" component={AboutUs} />
-            <Route path="/our-businesses/:product?" component={OurBusiness} />
+            <Route exact path="/our-businesses" component={OurBusinesses} />
+            <Route
+              exact
+              path="/our-businesses/our-products/:product?"
+              component={OurProducts}
+            />
+            <Route
+              exact
+              path="/our-businesses/our-services/:service?"
+              component={OurServices}
+            />
             <Route path="/business-opporturnities" component={BusinessOpp} />
             <Route path="/contact-us" component={ContactUs} />
             <Route component={PageNotFound} />

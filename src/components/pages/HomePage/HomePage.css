@@ -64,8 +64,8 @@
 }
 
 .serviceCard {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .serviceCard:hover {
@@ -87,5 +87,10 @@
   .serviceCard {
     max-width: 300px;
     max-height: 300px;
+    font-size: 0.8em;
+  }
+
+  .serviceCard:hover .card-img-overlay {
+    font-size: 1.75em;
   }
 }
