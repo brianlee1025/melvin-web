@@ -21,3 +21,12 @@
   margin: 0;
   padding: 0;
 }
+
+.emailHref {
+  text-decoration: none;
+  color: white;
+}
+
+.emailHref:hover {
+  color: white;
+}

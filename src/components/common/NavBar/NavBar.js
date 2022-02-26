@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container, NavDropdown, Image } from "react-bootstrap";
 import { menus } from "../../enum/NavBarMenu";
 import "./NavBar.css";
@@ -6,7 +6,25 @@ import "./NavBar.css";
 const public_img_path = process.env.PUBLIC_URL + "/img/";
 
 const NavBar = () => {
+  const { innerWidth: width } = window;
+
   const [showDropDown, setShowDropDown] = useState(menus.map((x) => false));
+  const [isScrollAtTop, setIsScrollAtTop] = useState(true);
+
+  const scollController = () => {
+    if (window.scrollY === 0) {
+      setIsScrollAtTop(true);
+    } else {
+      setIsScrollAtTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scollController);
+    return () => {
+      window.removeEventListener("scroll", scollController);
+    };
+  });
 
   const onHoverUpdateDropDown = (value, index) => {
     const clone = [...showDropDown];
@@ -14,15 +32,10 @@ const NavBar = () => {
     setShowDropDown(clone);
   };
 
-  const onClickUpdateDropDown = (index) => {
-    const clone = [...showDropDown];
-    clone[index] = !clone[index];
-    setShowDropDown(clone);
-  };
-
   return (
     <Navbar
       collapseOnSelect
+      sticky={!isScrollAtTop ? "top" : ""}
       expand="lg"
       style={{
         background: "#234ea2",
@@ -50,7 +63,6 @@ const NavBar = () => {
                 <NavDropdown
                   onMouseEnter={(e) => onHoverUpdateDropDown(true, index)}
                   onMouseLeave={(e) => onHoverUpdateDropDown(false, index)}
-                  onClick={(e) => onClickUpdateDropDown(index)}
                   key={index}
                   className="navDropDown"
                   title={menu.name.toUpperCase()}
@@ -62,13 +74,21 @@ const NavBar = () => {
                         className="navDropDown"
                         title={item.name.toUpperCase()}
                         key={j}
+                        drop={width > 768 ? "end" : "down"}
+                        style={{
+                          textAlign: "right",
+                        }}
                       >
-                        {item.dropDropItems.map((moreItem, k) => {
+                        {item.dropDownItems.map((moreItem, k) => {
                           return (
                             <NavDropdown.Item
                               className="navDropDownItem"
                               key={k}
                               eventKey={k}
+                              onClick={() => {
+                                window.location =
+                                  menu.url + item.url + moreItem.url;
+                              }}
                             >
                               {moreItem.name.toUpperCase()}
                             </NavDropdown.Item>

@@ -75,29 +75,63 @@ export const menus = [
     dropDown: true,
     dropDownItems: [
       {
-        name: "Pau Sedap",
-        url: "/pau-sedap",
-        dropDown: false,
+        name: "Our Services",
+        url: "/our-services",
+        dropDown: true,
+        dropDownItems: [
+          {
+            name: "Air Freight",
+            url: "/air-freight",
+            dropDown: false,
+          },
+          {
+            name: "Sea Freight",
+            url: "/sea-freight",
+            dropDown: false,
+          },
+          {
+            name: "Customs",
+            url: "/customs",
+            dropDown: false,
+          },
+          {
+            name: "Inland Transportation",
+            url: "/inland-transportation",
+            dropDown: false,
+          },
+        ],
       },
       {
-        name: "Ramly",
-        url: "/ramly",
-        dropDown: false,
-      },
-      {
-        name: "My Lacta",
-        url: "/my-lacta",
-        dropDown: false,
-      },
-      {
-        name: "Cleaning Products",
-        url: "/cleaning-products",
-        dropDown: false,
-      },
-      {
-        name: "Packaging Products",
-        url: "/packaging-products",
-        dropDown: false,
+        name: "Our Products",
+        url: "/our-products",
+        dropDown: true,
+        dropDownItems: [
+          {
+            name: "Pau Sedap",
+            url: "/pau-sedap",
+            dropDown: false,
+          },
+          {
+            name: "Ramly",
+            url: "/ramly",
+            dropDown: false,
+          },
+          {
+            name: "My Lacta",
+            url: "/my-lacta",
+            dropDown: false,
+          },
+          {
+            name: "Cleaning Products",
+            url: "/cleaning-products",
+            dropDown: false,
+          },
+          {
+            name: "Packaging Products",
+            url: "/packaging-products",
+            dropDown: false,
+          },
+        ],
       },
     ],
   },

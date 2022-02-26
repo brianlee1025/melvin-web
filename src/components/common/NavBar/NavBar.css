@@ -18,7 +18,7 @@
 
 .dropdown-menu {
   width: auto;
-  background-color: #234ea2;
+  background-color: #4571c9;
   margin-top: -5px !important;
 }
 
@@ -33,7 +33,6 @@
   .dropdown-menu {
     width: 100%;
     text-align: right !important;
-    float: right !important;
     min-width: 40% !important;
   }
 }
