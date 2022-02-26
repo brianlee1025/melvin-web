@@ -30,9 +30,8 @@
   align-items: flex-start !important;
 }
 
-.css-mpnodf-TimelineTitleWrapper {
-  min-height: 200px;
-  width: 20% !important;
+.timeline-card-content {
+  min-height: 200px !important;
 }
 
 .card-content-wrapper {
