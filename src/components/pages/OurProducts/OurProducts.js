@@ -27,38 +27,48 @@ const OurProducts = () => {
 
   const defaultOverlayTriggerData = [
     {
+      id: "pau-sedap",
       message: "Pau Sedap",
       show: true,
       onclick: () => {
         scrollToProduct("pau-sedap");
+        replaceUrl("pau-sedap");
       },
     },
     {
+      id: "ramly",
       message: "Ramly",
       show: false,
       onclick: () => {
         scrollToProduct("ramly");
+        replaceUrl("ramly");
       },
     },
     {
+      id: "my-lacta",
       message: "My Lacta",
       show: false,
       onclick: () => {
         scrollToProduct("my-lacta");
+        replaceUrl("my-lacta");
       },
     },
     {
+      id: "cleaning-products",
       message: "Cleaning Products",
       show: false,
       onclick: () => {
         scrollToProduct("cleaning-products");
+        replaceUrl("cleaning-products");
       },
     },
     {
+      id: "packaging-products",
       message: "Packaging Products",
       show: false,
       onclick: () => {
         scrollToProduct("packaging-products");
+        replaceUrl("packaging-products");
       },
     },
   ];
@@ -79,6 +89,7 @@ const OurProducts = () => {
     if (product && imageLoaded === 79) {
       scrollToProduct(product);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product, imageLoaded]);
 
   const scrollToProduct = (id) => {
@@ -90,6 +101,25 @@ const OurProducts = () => {
       top: offsetPosition,
       behavior: "smooth",
     });
+
+    const index = overlayTriggerData.findIndex((item) => item.id === id);
+    if (index !== -1) {
+      let cloneOverlayTriggerData = [
+        ...overlayTriggerData.map((x) => {
+          return { ...x, show: false };
+        }),
+      ];
+      cloneOverlayTriggerData[index].show = true;
+      setOverlayTriggerData(cloneOverlayTriggerData);
+    }
+  };
+
+  const replaceUrl = (product) => {
+    window.history.replaceState(
+      null,
+      "Our Products",
+      "/our-businesses/our-products/" + product
+    );
   };
 
   return (
@@ -248,14 +278,14 @@ const OurProducts = () => {
         </div>
       )}
 
-      {MiniNavBar({ overlayTriggerData, setOverlayTriggerData })}
+      {MiniNavBar({ overlayTriggerData })}
     </div>
   );
 };
 
 function MiniNavBar(props) {
   const [showOverlay, setShowOverlay] = useState(true);
-  const { overlayTriggerData, setOverlayTriggerData } = props;
+  const { overlayTriggerData } = props;
 
   return (
     <div>
@@ -264,7 +294,7 @@ function MiniNavBar(props) {
         placement="right"
         overlay={
           <Tooltip>
-            <strong>Navigate here!</strong>
+            <strong>Navigate via here!</strong>
           </Tooltip>
         }
       >
@@ -285,7 +315,7 @@ function MiniNavBar(props) {
             return (
               <OverlayTrigger
                 placement="right"
-                overlay={renderTooltip(item)}
+                overlay={renderTooltip(item, index)}
                 show={showOverlay}
                 delay={{ show: 1000, hide: 500 }}
                 key={index}
@@ -300,9 +330,18 @@ function MiniNavBar(props) {
   );
 }
 
-const renderTooltip = (data) => (
-  <Tooltip className="button-tooltip" onClick={data.onclick}>
-    {data.message}
+const renderTooltip = (data, index) => (
+  <Tooltip
+    className="button-tooltip"
+    onClick={() => {
+      data.onclick(index);
+    }}
+  >
+    {data.show ? (
+      <b style={{ color: "#234ea2" }}>{data.message}</b>
+    ) : (
+      data.message
+    )}
   </Tooltip>
 );
 
