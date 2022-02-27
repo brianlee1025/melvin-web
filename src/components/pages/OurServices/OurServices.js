@@ -217,15 +217,13 @@ const OurServices = (props) => {
                   clearance, our experts can guide you through the process.
                   <br />
                   <br />
-                  <AiOutlineCheck /> &nbsp;Personal Account Manager offering
-                  24/7 support and global coverage.
+                  <AiOutlineCheck /> &nbsp;Local solutions
                   <br />
                   <br />
-                  <AiOutlineCheck /> &nbsp;Global access and relationships with
-                  airlines.
+                  <AiOutlineCheck /> &nbsp;Risk management
                   <br />
                   <br />
-                  <AiOutlineCheck /> &nbsp;Airport-to-airport, door-to-door.
+                  <AiOutlineCheck /> &nbsp;Efficient process
                 </Card.Text>
               </Card.Body>
             </Card>
