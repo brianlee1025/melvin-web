@@ -25,7 +25,7 @@
 .miniNavBar {
   height: 100vh;
   position: fixed;
-  top: 25%;
+  top: 28%;
   left: 23px;
 }
 
@@ -38,7 +38,7 @@
 
 .navBarButton {
   position: fixed;
-  top: 20%;
+  top: 23%;
   left: 10px;
   background-color: #234ea2;
 }
