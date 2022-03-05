@@ -56,7 +56,7 @@ const HomePage = () => {
                   md={12}
                   className="mt-3 mb-4 noto-sans-sc sectionBody discoverStory"
                 >
-                  <p className="bold">Frozen Food Speicialist</p>
+                  <p className="bold">Frozen Food Specialist</p>
                   <p>
                     Since its inception in 2015, MMT Trading has been
                     established as frozen food specialist.
