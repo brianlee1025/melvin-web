@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -19,6 +20,15 @@ import OurServices from "./components/pages/OurServices/OurServices";
 import OurBusinesses from "./components/pages/OurBusinesses/OurBusinesses";
 
 function App() {
+  useEffect(() => {
+    if (
+      window.location.hostname == "mmt-trading.web.app" ||
+      window.location.hostname == "mmt-trading.firebaseapp.com"
+    ) {
+      window.location.href = "http://www.mmt.asia";
+    }
+  }, []);
+
   return (
     <div className="App">
       <Router>
