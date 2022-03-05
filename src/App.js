@@ -22,8 +22,8 @@ import OurBusinesses from "./components/pages/OurBusinesses/OurBusinesses";
 function App() {
   useEffect(() => {
     if (
-      window.location.hostname == "mmt-trading.web.app" ||
-      window.location.hostname == "mmt-trading.firebaseapp.com"
+      window.location.hostname === "mmt-trading.web.app" ||
+      window.location.hostname === "mmt-trading.firebaseapp.com"
     ) {
       window.location.href = "http://www.mmt.asia";
     }
